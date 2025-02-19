@@ -17059,6 +17059,7 @@ html {
 .services-area-card-img .card-change-img-1 {
   padding-top: 142px;
   transition: all 0.5s ease-out;
+  object-fit: cover;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .services-area-card-img .card-change-img-1 {

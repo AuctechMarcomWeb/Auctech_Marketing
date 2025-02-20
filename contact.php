@@ -172,7 +172,7 @@
                                         <textarea id="messages" name="message" class="no-border"></textarea>
                                     </div>
                                     <div class="page-btn mt-60">
-                                        <a href="#">Send Message</a>
+                                        <a href="#" type="submit">Send Message</a>
                                     </div>
                                 </form>
                             </div>

@@ -142,51 +142,45 @@
                 <h2>Our Latest Blog</h2>
             </div>
             <div class="row ">
-                <div class="col-xl-4 col-lg-4 ">
-                    <div class="blog-area-card d-md-flex justify-content-center mb-25" id="card-1">
-                        <div class="blog-area-card-wrapper">
-                            <span class="mb-20">February - 22th 2024</span>
-                            <h5 class="mb-20">Will you be attending Affiliate Summit Europe?</h5>
-                            <p class="hidden-card">I have been a loyal customer of this auto parts company for years and I cannot recommend them enough. Their extensive selection.</p>
-                            <div class="card-image mt-20 p-relative">
-                                <img class="blog-main-img" src="images/blog/block-page/block-page-img-1.png" alt="">
-                                <div class="blog-area-icon-img p-absolute">
-                                    <a href="#"><img src="images/icon/home-1-blog-awrro.svg" alt=""></a>
+                 <?php
+                        include('db_con.php');
+
+                            $sql = "SELECT blogs.blog_heading AS heading, 
+                                        blogs_images.image, 
+                                        blogs.blog_desc_first, 
+                                        blogs.blog_url,
+                                        blogs.created_at
+                                FROM blogs
+                                INNER JOIN blogs_images ON blogs.id = blogs_images.blog_id
+                                GROUP BY blogs.id LIMIT 2"; 
+
+                            $result = $con->query($sql);
+
+                            while ($row = $result->fetch_assoc()) {
+                            $heading = $row['heading'];
+                            $image = $row['image'];
+                            $blog_desc_first = $row['blog_desc_first'];
+                            $blog_url = $row['blog_url'];
+                            $created_at = $row['created_at'];
+                            $formatted_date = date("j F Y", strtotime($created_at));
+
+                    ?>
+                    <div class="col-xl-4 col-lg-4 ">
+                        <div class="blog-area-card d-md-flex justify-content-center mb-25" id="card-1">
+                            <div class="blog-area-card-wrapper">
+                                <span class="mb-20"><?php echo $formatted_date; ?></span>
+                                <h5 class="mb-20"><?php echo $heading; ?></h5>
+                                <p class="hidden-card"><?php echo $blog_desc_first; ?></p>
+                                <div class="card-image mt-20 p-relative">
+                                    <img class="blog-main-img" src="blog/blog_uploads/<?php echo $image; ?>" alt="">
+                                    <div class="blog-area-icon-img p-absolute">
+                                        <a href="blog/<?php echo $blog_url; ?>"><img src="images/icon/home-1-blog-awrro.svg" alt=""></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xl-4 col-lg-4">
-                    <div class="blog-area-card d-md-flex justify-content-center mb-25" id="card-2">
-                        <div class="blog-area-card-wrapper">
-                            <span class="mb-20">February - 22th 2024</span>
-                            <h5 class="mb-20">Will you be attending Affiliate Summit Europe?</h5>
-                            <p class="visible-card">I have been a loyal customer of this auto parts company for years and I cannot recommend them enough. Their extensive selection.</p>
-                            <div class="card-image mt-20 p-relative">
-                                <img class="blog-main-img" src="images/blog/block-page/block-page-img-2.png" alt="">
-                                <div class="blog-area-icon-img p-absolute">
-                                    <a href="#"><img src="images/icon/home-1-blog-awrro.svg" alt=""></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4">
-                    <div class="blog-area-card d-md-flex justify-content-center mb-25" id="card-3">
-                        <div class="blog-area-card-wrapper">
-                            <span class="mb-20">February - 22th 2024</span>
-                            <h5 class="mb-20">Will you be attending Affiliate Summit Europe?</h5>
-                            <p class="hidden-card">I have been a loyal customer of this auto parts company for years and I cannot recommend them enough. Their extensive selection.</p>
-                            <div class="card-image mt-20 p-relative">
-                                <img class="blog-main-img" src="images/blog/block-page/block-page-img-3.png" alt="">
-                                <div class="blog-area-icon-img p-absolute">
-                                    <a href="#"><img src="images/icon/home-1-blog-awrro.svg" alt=""></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <?php } ?>
             </div>
         </div>
      </div>

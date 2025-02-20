@@ -37,7 +37,7 @@
                             <td><?php echo $i; ?></td>
                             
                             <td><?php echo $row['type']; ?></td>
-                            <td><img src="../donation_uploads/admin/<?php echo $row['image_path']; ?>" alt="Image" class="img-thumbnail" style="max-width: 80px; height: auto;"></td>
+                            <td><img src="<?php echo $row['image_path']; ?>" alt="Image" class="img-thumbnail" style="max-width: 80px; height: auto;"></td>
                             <td><?php echo $row['title']; ?></td>
                            
                             <td class="text-center">

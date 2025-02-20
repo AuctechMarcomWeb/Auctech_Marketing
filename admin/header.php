@@ -34,7 +34,7 @@
         <!-- START HEADER-->
         <header class="header">
             <div class="page-brand">
-                <a class="link" href="index">
+                <a class="link" href="index.php">
                     <span class="brand">
                     <img src="./assets/img/WB-Web-logo.png" alt="" width="100px;">
                     </span>

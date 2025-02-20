@@ -69,7 +69,7 @@ if (isset($_POST['submit'])) {
                                         placeholder="Enter Review">
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label>Client Address</label>
+                                    <label>Client Designation</label>
                                     <input type="text" name="designation" class="form-control" placeholder="Enter Designation">
                                 </div>
                             </div>

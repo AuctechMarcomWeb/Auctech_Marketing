@@ -4,7 +4,7 @@
             <div class="row align-items-center gx-0">
                 <div class="col-5 col-xl-2 col-lg-3 col-md-4 p-0">
                     <div class="header-area-image style-2 ml-100">
-                        <a href="index.html"><img src="images/logo/logo.png" alt="logo"></a>
+                        <a href="index.php"><img src="images/logo/logo.png" alt="logo"></a>
                     </div>
                 </div>
                 <div class="col-7 col-xl-10 col-lg-9 col-md-8">
@@ -12,23 +12,23 @@
                         class="header-area-menu style-2 d-flex justify-content-end  d-xl-flex d-lg-flex  d-md-flex align-items-center justify-content-xl-between justify-content-lg-between justify-content-md-end   p-relative z-index-11">
                         <nav>
                             <ul class="main-menu  d-xl-flex d-lg-flex justify-content-center align-items-center">
-                                <li class="scroll-effect"><a href="marcom-lab.html">Marcom Lab</a></li>
+                                <li class="scroll-effect"><a href="marcom-lab.php">Marcom Lab</a></li>
                                 <li class="scroll-effect"><a class="plus-icon" href="#">Department</a>
                                     <ul class="sub-menu">
-                                        <li><a href="creative-production.html">Creative Production</a></li>
-                                        <li><a href="marcom-consulting.html">MarCom Consulting</a></li>
-                                        <li><a href="tech-consulting.html">Tech Consulting</a></li>
-                                        <li><a href="system-integration.html">System Integration</a></li>
+                                        <li><a href="creative-production.php">Creative Production</a></li>
+                                        <li><a href="marcom-consulting.php">MarCom Consulting</a></li>
+                                        <li><a href="tech-consulting.php">Tech Consulting</a></li>
+                                        <li><a href="system-integration.php">System Integration</a></li>
                                     </ul>
                                 </li>
-                                <li class="scroll-effect"><a href="partners.html">Partners</a></li>
+                                <li class="scroll-effect"><a href="partners.php">Partners</a></li>
                                 <li class="scroll-effect"><a href="#">Experts & Scientist</a></li>
-                                <li class="scroll-effect"><a href="invention.html">Inventions</a></li>
-                                <li class="scroll-effect"><a href="blogs.html">Blogs</a></li>
+                                <li class="scroll-effect"><a href="invention.php">Inventions</a></li>
+                                <li class="scroll-effect"><a href="blogs.php">Blogs</a></li>
                             </ul>
                         </nav>
                         <div class="header-area-touch-btn">
-                            <a href="contact.html">Contact Us</a>
+                            <a href="contact.php">Contact Us</a>
                         </div>
                         <div id="toggle-button">
                             <a href="#"><i class="fa-solid fa-bars"></i></a>
@@ -50,16 +50,16 @@
                     </div>
                     <nav>
                         <ul class="dropdown">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="marcom-lab.html">MarCom Lab</a></li>
+                            <li><a href="index.php">Home</a></li>
+                            <li><a href="marcom-lab.php">MarCom Lab</a></li>
                             <li><a href="#">Department</a>
                                 <div class="dropdown-btn">
                                     <button class="dropdown-toggle-btn width-100" onclick="toggleList(2)"><i
                                             class="fa-solid fa-plus"></i></button>
                                 </div>
                                 <ul id="dropdown-toggle-menu-2" class=" hidden-list">
-                                    <li><a href="creative-production.html">Creative Production</a></li>
-                                    <li><a href="marcom-consulting.html"> MarCom Consulting</a></li>
+                                    <li><a href="creative-production.php">Creative Production</a></li>
+                                    <li><a href="marcom-consulting.php"> MarCom Consulting</a></li>
                                     <li><a href="#">Tech Consulting</a></li>
                                     <li><a href="#">System Integration</a></li>
                                 </ul>

@@ -36,9 +36,9 @@
             <div class="page-brand">
                 <a class="link" href="index.php">
                     <span class="brand">
-                    <img src="./assets/img/WB-Web-logo.png" alt="" width="100px;">
+                    <img src="./assets/img/logo.png" alt="" width="100px;">
                     </span>
-                    <span class="brand-mini"> <img src="img/WB-Web-logo.png" alt="" width="100px;"></span>
+                    <span class="brand-mini"> <img src="img/logo.png" alt="" width="100px;"></span>
                 </a>
             </div>
             <div class="flexbox flex-1">
@@ -53,7 +53,7 @@
                 <ul class="nav navbar-toolbar">
                     <li class="dropdown dropdown-user">
                         <a class="nav-link dropdown-toggle link" data-toggle="dropdown">
-                            <img src="./assets/img/WB-Web-logo.png" />
+                            <img src="./assets/img/logo.png" />
                             <span></span>Admin<i class="fa fa-angle-down m-l-5"></i></a>
                         <ul class="dropdown-menu dropdown-menu-right">
                            

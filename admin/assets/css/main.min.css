@@ -5014,20 +5014,19 @@ body.has-backdrop .backdrop {
 .side-menu>li a:focus,
 .side-menu>li a:hover {
     color: #fff;
-    background-color: #3498db
+    background-color: black;
 }
 
 .side-menu>li.active {
-    background-color: #2e4255
+    background-color: black;
 }
 
 .side-menu>li.active>a,
 .side-menu>li.active>a:focus,
 .side-menu>li.active>a:hover {
     color: #fff;
-    background-color: #3498db
+    background-color: black;
 }
-
 .side-menu li a.active {
     color: #fff
 }

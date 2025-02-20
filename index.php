@@ -51,7 +51,7 @@
     <!-- Header Start -->
     <header id="header">
         <?php
-            include('header.php');
+        include('header.php');
         ?>
     </header>
     <!-- Header End -->
@@ -119,11 +119,11 @@
                         <div class="col-12 col-xl-8 col-lg-8 col-md-12 p-0">
                             <div class="hero-area-slider-section hero-slider-active p-relative z-index-11">
                                 <?php
-                                    include('db_con.php');
-                                    $result = $con->query("SELECT image_path, title FROM add_banner");
+                                include('db_con.php');
+                                $result = $con->query("SELECT image_path, title FROM add_banner");
 
-                                    while ($row = $result->fetch_assoc()):
-                                ?>
+                                while ($row = $result->fetch_assoc()):
+                                    ?>
                                 <div class="hero-area-slider-wrapper p-relative z-index-11">
                                     <div class="hero-area-slider-image">
                                         <img src="admin/<?php echo ($row['image_path']); ?>" alt="">
@@ -134,17 +134,19 @@
                                         <div class="title-border-1"></div>
                                     </div>
                                 </div>
-                                <?php endwhile; ?> 
+                                <?php endwhile; ?>
                             </div>
                         </div>
                         <div class="col-xl-4 col-lg-4 ">
                             <div class="hero-area-author-Wrapper pr-70 pl-130">
-                                <p class="text-justify">Auctech Marcom is a global strategic management consulting group that serves leading
+                                <p class="text-justify">Auctech Marcom is a global strategic management consulting group
+                                    that serves leading
                                     businesses, <br> multi-national companies, small and medium enterprises, NGO's and
                                     start-ups.</p>
                                 <div class="title-border-2 mb-42 mt-32">
                                 </div>
-                                <p class="text-justify">We help our clients by result-oriented cutting-edge solutions. Auctech Marcom with
+                                <p class="text-justify">We help our clients by result-oriented cutting-edge solutions.
+                                    Auctech Marcom with
                                     its unique business model serves the clients by catering to cross functional
                                     consulting and marketing requirements.</p>
                             </div>
@@ -243,7 +245,8 @@
                             </h2>
                         </div>
                         <div class="about-area-text ml-110 mr-104">
-                            <p class="mb-11 text-justify">Auctech Marcom works tirelessly on value creation by substantially
+                            <p class="mb-11 text-justify">Auctech Marcom works tirelessly on value creation by
+                                substantially
                                 enhancing the perceived benefits through extremely high quality output while optimizing
                                 the cost at the same time. We achieve this by keeping our overheads low and leveraging
                                 people, processes and technology to deliver extremely high quality service. This mantra
@@ -275,7 +278,8 @@
                             <div class="card-wrapper style-1">
                                 <div class="card-text mb-35">
                                     <h3>Web Design & Development</h3>
-                                    <p class="text-justify">Web Design & Development involves creating visually appealing and highly
+                                    <p class="text-justify">Web Design & Development involves creating visually
+                                        appealing and highly
                                         functional websites.</p>
                                 </div>
                                 <div class="card-content d-flex justify-content-between align-items-center">
@@ -290,7 +294,8 @@
                             <div class="card-wrapper style-1">
                                 <div class="card-text mb-35">
                                     <h3>Advertising and Marketing Campaigns</h3>
-                                    <p class="text-justify">Advertising and marketing campaigns craft targeted messages to boost brand
+                                    <p class="text-justify">Advertising and marketing campaigns craft targeted messages
+                                        to boost brand
                                         visibility and engagement</p>
                                 </div>
                                 <div class="card-content d-flex justify-content-between align-items-center">
@@ -305,7 +310,8 @@
                             <div class="card-wrapper style-1">
                                 <div class="card-text mb-35">
                                     <h3>Creative Consulting <br> and Development</h3>
-                                    <p class="text-justify">Creative consulting and development provide innovative to enhance brand identity
+                                    <p class="text-justify">Creative consulting and development provide innovative to
+                                        enhance brand identity
                                         and growth.</p>
                                 </div>
                                 <div class="card-content d-flex justify-content-between align-items-center">
@@ -320,7 +326,8 @@
                             <div class="card-wrapper style-1">
                                 <div class="card-text mb-35">
                                     <h3>Branding and <br> Identity Design</h3>
-                                    <p class="text-justify">Branding and identity design create a cohesive visual identity that defines and
+                                    <p class="text-justify">Branding and identity design create a cohesive visual
+                                        identity that defines and
                                         differentiates brands.</p>
                                 </div>
                                 <div class="card-content d-flex justify-content-between align-items-center">
@@ -350,9 +357,11 @@
                                     <h2>We Provide Services <br> In One Places</h2>
                                 </div>
                                 <div class="wcu-area-text mr-75 ">
-                                    <h5 class="mb-20 text-justify">Auctech always try to provide the best Business Solutions for
+                                    <h5 class="mb-20 text-justify">Auctech always try to provide the best Business
+                                        Solutions for
                                         Clients to grow up their Business sharply and smoothly.</h5>
-                                    <p class="text-justify">We help our clients by result-oriented cutting-edge solutions. Auctech Marcom
+                                    <p class="text-justify">We help our clients by result-oriented cutting-edge
+                                        solutions. Auctech Marcom
                                         with its unique business model serves the clients by catering to cross
                                         functional consulting and marketing requirements. </p>
 
@@ -608,76 +617,35 @@
                         <div class="testimonial-area-main-slider ">
                             <div class="testimonial-area-slider-wrapper">
                                 <div class="fast-slider testimonial-active-slider">
+                                    <?php
+                                    include('db_con.php');
+                                    $result = $con->query("SELECT name, review, designation, image_path FROM add_testimonial");
+                                    while ($row = $result->fetch_assoc()):
+                                    ?>
                                     <div class="slider-image d-flex justify-content-center">
-                                        <img src="images/testimonial/clint-1.jpg" alt="">
+                                        <img src="admin/<?php echo $row['image_path']; ?>" alt="Testimonial image">
                                     </div>
-                                    <div class="slider-image d-flex justify-content-center">
-                                        <img src="images/testimonial/clint-2.jpg" alt="">
-                                    </div>
-                                    <div class="slider-image d-flex justify-content-center">
-                                        <img src="images/testimonial/clint-3.jpg" alt="">
-                                    </div>
-                                    <div class="slider-image d-flex justify-content-center">
-                                        <img src="images/testimonial/clint-1.jpg" alt="">
-                                    </div>
+                                    <?php endwhile; ?>
                                 </div>
+
                                 <div class="second-slider testimonial-active-slider-nav mt-25">
+                                    <?php
+                                    $result->data_seek(0);
+                                    while ($row = $result->fetch_assoc()):
+                                    ?>
                                     <div class="slider-wrapper">
                                         <div class="slider-pra mb-15">
-                                            <p>I have been a loyal customer of this auto parts company for years and I
-                                                cannot recommend them enough. Their extensive selection of high-quality
-                                                parts and accessories, combined with their competitive prices.</p>
+                                            <p><?php echo $row['review']; ?></p>
                                         </div>
                                         <div class="slider-info d-flex justify-content-between">
                                             <div class="slider-info-text">
-                                                <h5 class="mb-8 ">Marvin McKinney</h5>
-                                                <span>Web designer</span>
+                                                <h5 class="mb-8"><?php echo $row['name']; ?></h5>
+                                                <span><?php echo $row['designation']; ?></span>
                                             </div>
                                             <span class="icon-quote"></span>
                                         </div>
                                     </div>
-                                    <div class="slider-wrapper">
-                                        <div class="slider-pra mb-15">
-                                            <p>I have been a loyal customer of this auto parts company for years and I
-                                                cannot recommend them enough. Their extensive selection of high-quality
-                                                parts and accessories, combined with their competitive prices.</p>
-                                        </div>
-                                        <div class="slider-info d-flex justify-content-between">
-                                            <div class="slider-info-text">
-                                                <h5 class="mb-8">Marvin McKinney</h5>
-                                                <span>Web designer</span>
-                                            </div>
-                                            <span class="icon-quote"></span>
-                                        </div>
-                                    </div>
-                                    <div class="slider-wrapper">
-                                        <div class="slider-pra mb-15">
-                                            <p>I have been a loyal customer of this auto parts company for years and I
-                                                cannot recommend them enough. Their extensive selection of high-quality
-                                                parts and accessories, combined with their competitive prices.</p>
-                                        </div>
-                                        <div class="slider-info d-flex justify-content-between">
-                                            <div class="slider-info-text">
-                                                <h5 class="mb-8">Marvin McKinney</h5>
-                                                <span>Web designer</span>
-                                            </div>
-                                            <span class="icon-quote"></span>
-                                        </div>
-                                    </div>
-                                    <div class="slider-wrapper">
-                                        <div class="slider-pra mb-15">
-                                            <p>I have been a loyal customer of this auto parts company for years and I
-                                                cannot recommend them enough. Their extensive selection of high-quality
-                                                parts and accessories, combined with their competitive prices.</p>
-                                        </div>
-                                        <div class="slider-info d-flex justify-content-between">
-                                            <div class="slider-info-text">
-                                                <h5 class="mb-8">Marvin McKinney</h5>
-                                                <span>Web designer</span>
-                                            </div>
-                                            <span class="icon-quote"></span>
-                                        </div>
-                                    </div>
+                                    <?php endwhile; ?>
                                 </div>
                             </div>
                         </div>
@@ -781,7 +749,7 @@
     <!-- Footer Start -->
     <footer id="footer">
         <?php
-            include('footer.php');
+        include('footer.php');
         ?>
     </footer>
     <!-- Scroll Up Section Start -->

@@ -36,9 +36,9 @@
             <div class="page-brand">
                 <a class="link" href="index.php">
                     <span class="brand">
-                    <img src="./assets/img/logo.png" alt="" width="100px;">
+                    <img src="./assets/img/logo.png" alt="" width="80px;" height="60px">
                     </span>
-                    <span class="brand-mini"> <img src="img/logo.png" alt="" width="100px;"></span>
+                    <span class="brand-mini"> <img src="./assets/img/logo.png" alt="" width="100px;"></span>
                 </a>
             </div>
             <div class="flexbox flex-1">
@@ -75,7 +75,7 @@
                         </a>
                     </li>
                     <li class="mt-3">
-                        <a href="javascript:;"><i class="sidebar-item-icon"><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/google-blog-search.png" alt="google-blog-search"/></i>
+                        <a href="javascript:;"><i class="sidebar-item-icon"><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/old-shop.png" alt="old-shop"/></i>
                             <span class="nav-label">Banner</span><i class="fa fa-angle-left arrow"></i></a>
                         <ul class="nav-2-level collapse">
                             <li>
@@ -86,7 +86,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="mt-3">
+                    <li class="mt-2">
                         <a href="javascript:;"><i class="sidebar-item-icon"><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/google-blog-search.png" alt="google-blog-search"/></i>
                             <span class="nav-label">Blog</span><i class="fa fa-angle-left arrow"></i></a>
                         <ul class="nav-2-level collapse">

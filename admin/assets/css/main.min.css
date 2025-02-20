@@ -4529,7 +4529,9 @@ a.text-danger:hover {
     float: left;
     width: 30px;
     line-height: 20px !important;
-    font-size: 16px
+    font-size: 16px;
+    margin-right: 12px !important;
+
 }
 
 .side-menu li .nav-label {

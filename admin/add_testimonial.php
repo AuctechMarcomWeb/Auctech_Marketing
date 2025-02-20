@@ -6,7 +6,7 @@ if (isset($_POST['submit'])) {
     // Get form data
     $name = $_POST['name'];
     $review = $_POST['review'];
-    $address = $_POST['address'];
+    $designation = $_POST['designation'];
 
 
     $target_dir = "testimonial_uploads/";
@@ -22,8 +22,8 @@ if (isset($_POST['submit'])) {
         exit;
     }
 
-    $sql = "INSERT INTO add_testimonial (name, review, address, image_path) 
-            VALUES ('$name', '$review', '$address', '$target_file')";
+    $sql = "INSERT INTO add_testimonial (name, review, designation, image_path) 
+            VALUES ('$name', '$review', '$designation', '$target_file')";
 
     if ($con->query($sql) === TRUE) {
         header('Location: testimonials_list.php');
@@ -70,7 +70,7 @@ if (isset($_POST['submit'])) {
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label>Client Address</label>
-                                    <input type="text" name="address" class="form-control" placeholder="Enter Address">
+                                    <input type="text" name="designation" class="form-control" placeholder="Enter Designation">
                                 </div>
                             </div>
 

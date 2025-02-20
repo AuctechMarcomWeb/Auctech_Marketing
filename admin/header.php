@@ -103,7 +103,7 @@
                             <span class="nav-label"> Testimonials</span><i class="fa fa-angle-left arrow"></i></a>
                         <ul class="nav-2-level collapse">
                             <li>
-                                <a href="add_testimonials"> Add New  Testimonials </a>
+                                <a href="add_testimonial"> Add New  Testimonials </a>
                             </li>
                             <li>
                                 <a href="testimonials_list"> Testimonials List</a>

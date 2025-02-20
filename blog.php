@@ -36,8 +36,7 @@ if (isset($_GET['page_url'])) {
     <title><?php echo $blog['blog_desc_first']  ?></title>
     <meta name="description" content="<?php echo $blog['blog_desc_second']  ?>">
     <meta name="keywords" content="<?php echo $blog['blog_point_one']  ?>">
-    <link rel="icon" type="image/png" href="images/logo/favicon.png" />
-
+    <link rel="icon" type="image/png" href="../images/logo/favicon.png" />
     <link rel="stylesheet" href="../css/font-main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -52,6 +51,8 @@ if (isset($_GET['page_url'])) {
     <link rel="stylesheet" href="../css/animate.min.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <script src="../js/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
 </head>
 
 <body>
@@ -164,7 +165,7 @@ if (isset($_GET['page_url'])) {
                         <div class="toggle-social-icon">
                             <ul class="d-flex justify-content-between">
                                 <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
                                 <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
 
                             </ul>
@@ -205,7 +206,7 @@ if (isset($_GET['page_url'])) {
                 <div class="team-area-member-social-link offcanves-socail-icon  text-center mt-35">
                     <ul>
                         <li class="d-inline"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li class="d-inline"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li class="d-inline"><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
                         <li class="d-inline"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
                         <li class="d-inline"><a href="#"><i class="fa-solid fa-basketball"></i></a></li>
                     </ul>
@@ -390,12 +391,11 @@ if (isset($_GET['page_url'])) {
                                         src="../images/icon/footer-email.svg" alt=""> info@auctech.in </a>
                             </div>
                             <div class="social-content d-flex gap-40">
-                                <a href="#"><img class="mr-10" src="../images/icon/footer-social_facebook.svg"
-                                        alt="">Facebook</a>
-                                <a href="#"><img class="mr-10" src="../images/icon/footer-social_pinterest.svg"
-                                        alt="">Pinterest</a>
-                                <a href="#"><img class="mr-10" src="../images/icon/footer-social_linkedin.svg"
-                                        alt="">Linkedin</a>
+                                <a href="#"><i class="fa-brands fa-square-instagram mr-10"></i>Instragarm</a>
+                                <a href="#"><i class="fa-brands fa-facebook-f  mr-10"></i>Facebook</a>
+                                <a href="#"><i class="fa-brands fa-linkedin-in  mr-10"></i>Linkedin</a>
+                                <a href="#"><i class="fa-brands fa-x-twitter mr-10"></i>Twitter</a>
+                                <a href="#"><i class="fa-brands fa-youtube mr-10"></i>Youtube</a>
                             </div>
                         </div>
                     </div>

@@ -13,21 +13,26 @@
                         <h4>Together</h4>
                     </div>
                     <div class="footer-area-company-fast-email pb-69">
-                        <a href= "mailto:info@auctech.in"> info@auctech.in<img class="pl-10" src="images/icon/footer-up-awrro.svg" alt=""> </a>
+                        <a href="mailto:info@auctech.in"> info@auctech.in<img class="pl-10"
+                                src="images/icon/footer-up-awrro.svg" alt=""> </a>
                     </div>
                     <hr class="mt-0 mb-16">
                 </div>
             </div>
             <div class="col-xl-9 col-lg-9">
                 <div class="footer-area-contract-info ">
-                    <div class="footer-area-social-info d-block d-xl-flex d-lg-flex d-md-flex justify-content-between align-items-center pt-74 pb-34">
+                    <div
+                        class="footer-area-social-info d-block d-xl-flex d-lg-flex d-md-flex justify-content-between align-items-center pt-74 pb-34">
                         <div class="sce-email ml-120">
-                            <a href="mailto:info@auctech.in"><img class="mr-15" src="images/icon/footer-email.svg" alt=""> info@auctech.in </a>
+                            <a href="mailto:info@auctech.in"><img class="mr-15" src="images/icon/footer-email.svg"
+                                    alt=""> info@auctech.in </a>
                         </div>
                         <div class="social-content d-flex gap-40">
-                            <a href="#"><img class="mr-10" src="images/icon/footer-social_facebook.svg" alt="">Facebook</a>
-                            <a href="#"><img class="mr-10" src="images/icon/footer-social_pinterest.svg" alt="">Pinterest</a>
-                            <a href="#"><img class="mr-10" src="images/icon/footer-social_linkedin.svg" alt="">Linkedin</a>
+                            <a href="#"><i class="fa-brands fa-square-instagram mr-10"></i>Instragarm</a>
+                            <a href="#"><i class="fa-brands fa-facebook-f  mr-10"></i>Facebook</a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in  mr-10"></i>Linkedin</a>
+                            <a href="#"><i class="fa-brands fa-x-twitter mr-10"></i>Twitter</a>
+                            <a href="#"><i class="fa-brands fa-youtube mr-10"></i>Youtube</a>
                         </div>
                     </div>
                 </div>
@@ -42,7 +47,7 @@
                         </ul>
                     </div>
                     <div class="footer-area-quick-menu-two ml-127 mr-92">
-                      
+
                         <ul>
                             <li><a href="creative-production.php">Creative Production</a></li>
                             <li><a href="marcom-consulting.php">MarCom Consulting</a></li>
@@ -53,7 +58,7 @@
                         </ul>
                     </div>
                     <div class="footer-area-services">
-                        
+
                         <ul>
                             <li><a href="#">Privacy Policy</a></li>
                             <li><a href="#">Terms & Conditions</a></li>

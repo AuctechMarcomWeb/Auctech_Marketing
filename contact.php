@@ -137,11 +137,12 @@
                                 <div class="title-border-5"></div>
                             </div>
                             <div class="contact-form">
-                                <form action="https://consalpro.alexisnickcreates.com/submit" method="post">
+                                <form  method="POST" action="save_contact.php"
+                                id="enquiryForm">
                                     <div class="contract-group gx-1">
                                         <div class="input-col">
                                             <label class="name" for="fullname">Full Name:</label>
-                                            <input type="text" id="fullname" name="fullname" class="no-border">
+                                            <input type="text" id="name" name="name" class="no-border">
                                         </div>
                                         <div class="input-col">
                                             <label class="email" for="email">Email Address:</label>
@@ -151,7 +152,7 @@
                                     <div class="contract-group gx-1">
                                         <div class="input-col">
                                             <label class="phone" for="phone">Phone:</label>
-                                            <input type="tel" id="phone" name="phone" class="no-border">
+                                            <input type="numbert" id="phone" name="phone" class="no-border">
                                         </div>
                                         <div class="input-col">
                                             <label for="subject">Subject:</label>
@@ -216,7 +217,51 @@
     <script src="js/isotope.min.js"></script>
     <script src="js/jquery.imagesloaded.min.js"></script>
     <script src="js/custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+$(document).ready(function() {
+    $('#enquiryForm').submit(function(e) {
+        e.preventDefault();
 
+        var formData = $(this).serialize();
+
+        $.ajax({
+            url: 'save_contact.php', 
+            type: 'POST',
+            data: formData,
+            success: function(response) {
+                if (response == 'success') {
+                    // Display a success message using SweetAlert
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Message Sent!',
+                        text: 'Your message has been sent successfully.',
+                    }).then(function() {
+                        // Clear the form fields after successful submission
+                        $('#enquiryForm')[0]
+                    .reset(); 
+                    });
+                } else {
+                    // Display an error message
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Something went wrong. Please try again later.',
+                    });
+                }
+            },
+            error: function() {
+                // In case of AJAX failure
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Something went wrong. Please try again later.',
+                });
+            }
+        });
+    });
+});
+</script>
 </body>
 
 </html>

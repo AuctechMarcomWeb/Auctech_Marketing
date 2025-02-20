@@ -3,7 +3,7 @@
     $servername = 'localhost';
     $username = 'root';
     $password = '';
-    $database = "weailth_builder_db";
+    $database = "auctech_marketing";
 
     $con = new mysqli($servername, $username, $password, $database);
 

@@ -76,6 +76,18 @@
                     </li>
                     <li class="mt-3">
                         <a href="javascript:;"><i class="sidebar-item-icon"><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/google-blog-search.png" alt="google-blog-search"/></i>
+                            <span class="nav-label">Banner</span><i class="fa fa-angle-left arrow"></i></a>
+                        <ul class="nav-2-level collapse">
+                            <li>
+                                <a href="add_banner">Add New Banner </a>
+                            </li>
+                            <li>
+                                <a href="banner_list">Banner List</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mt-3">
+                        <a href="javascript:;"><i class="sidebar-item-icon"><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/google-blog-search.png" alt="google-blog-search"/></i>
                             <span class="nav-label">Blog</span><i class="fa fa-angle-left arrow"></i></a>
                         <ul class="nav-2-level collapse">
                             <li>

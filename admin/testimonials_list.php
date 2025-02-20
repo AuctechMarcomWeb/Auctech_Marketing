@@ -20,7 +20,7 @@
                             <th>Name</th>
                             <th>Image</th>
                             <th>Review</th>
-                            <th>Address</th>
+                            <th>Designation</th>
                             <th class="text-center">Action</th>
                         </tr>
                     </thead>
@@ -40,7 +40,7 @@
                             <td><?php echo $row['name']; ?></td>
                             <td><img src="<?php echo $row['image_path']; ?>" alt="Image" class="img-thumbnail" style="max-width: 80px; height: auto;"></td>
                             <td><?php echo $row['review']; ?></td>
-                            <td><?php echo $row['address']; ?></td>
+                            <td><?php echo $row['designation']; ?></td>
                            
                             <td class="text-center">
                                 <a type="submit" class="btn btn-primary shadow btn-xs sharp me-1"

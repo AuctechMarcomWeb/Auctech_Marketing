@@ -98,6 +98,18 @@
                             </li>
                         </ul>
                     </li>
+                    <li class="mt-2">
+                        <a href="javascript:;"><i class="sidebar-item-icon"><img width="30" height="30" src="https://img.icons8.com/external-kmg-design-glyph-kmg-design/32/FFFFFF/external-feedback-feedback-kmg-design-glyph-kmg-design.png"/></i>
+                            <span class="nav-label"> Testimonials</span><i class="fa fa-angle-left arrow"></i></a>
+                        <ul class="nav-2-level collapse">
+                            <li>
+                                <a href="add_testimonials"> Add New  Testimonials </a>
+                            </li>
+                            <li>
+                                <a href="testimonials_list"> Testimonials List</a>
+                            </li>
+                        </ul>
+                    </li>
                     <li>
                         <a class="" href="querylist"><i class="sidebar-item-icon"><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/ask-question.png" alt="ask-question"/></i>
                             <span class="nav-label">Query List</span>

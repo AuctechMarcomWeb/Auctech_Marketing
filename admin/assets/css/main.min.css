@@ -4478,7 +4478,6 @@ a.text-danger:hover {
     min-height: 100%;
     position: absolute;
     top: 0;
-    background-image:url('assets/img/download.png');
     margin-top: 50px;
     -webkit-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
@@ -4534,8 +4533,7 @@ a.text-danger:hover {
 }
 
 .side-menu li .nav-label {
-    /* display: block */
-    margin-left: 20px;
+    display:  contents !important;
 }
 
 .side-menu li .arrow {
@@ -4559,7 +4557,7 @@ a.text-danger:hover {
 }
 
 .side-menu .nav-2-level>li>a {
-    padding: 9px 24px 9px 64px;
+    padding: 7px 10px 7px 45px
 }
 
 .side-menu .nav-3-level>li>a {
@@ -4994,7 +4992,7 @@ body.has-backdrop .backdrop {
 }
 
 .page-sidebar {
-    background-color: #000;
+    background-color: #253544
 }
 
 .page-sidebar .admin-block .admin-info {
@@ -5016,18 +5014,18 @@ body.has-backdrop .backdrop {
 .side-menu>li a:focus,
 .side-menu>li a:hover {
     color: #fff;
-    background-color: #000
+    background-color: #3498db
 }
 
 .side-menu>li.active {
-    background-color: #000
+    background-color: #2e4255
 }
 
 .side-menu>li.active>a,
 .side-menu>li.active>a:focus,
 .side-menu>li.active>a:hover {
     color: #fff;
-    background-color: #000
+    background-color: #3498db
 }
 
 .side-menu li a.active {
@@ -5045,7 +5043,7 @@ body.has-backdrop .backdrop {
 
 .header .page-brand {
     color: #fff;
-    background-color: #000
+    background-color: #374f65
 }
 
 .legendLabel {

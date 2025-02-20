@@ -74,9 +74,9 @@
     <!-- Preloader End  -->
     <!-- Header Start -->
     <header id="header">
-        <script>
-            $('#header').load('header.html');
-        </script>
+        <?php
+            include('header.php');
+        ?>
     </header>
     <!-- Header End -->
     <!-- Off Canvas Start  -->
@@ -202,7 +202,9 @@
     <!-- Services Details Page End -->
     <!-- Footer Start -->
     <footer id="footer">
-        <script>$('#footer').load('footer.html') </script>
+        <?php
+            include('footer.php');
+        ?>
     </footer>
     <!-- Scroll Up Section Start -->
     <div id="scrollTop" class="scrollup-wrapper">

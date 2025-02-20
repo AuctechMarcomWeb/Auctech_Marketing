@@ -34,21 +34,21 @@
                 <div class="footer-area-quick-menu d-flex pt-67 pb-40 ml-120">
                     <div class="footer-area-quick-menu-one ">
                         <ul>
-                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index.php">Home</a></li>
                             <li><a href="#">About Us</a></li>
                             <li><a href="#"> Portfolio</a></li>
-                            <li><a href="#"> Contact Us</a></li>
-                            <li><a href="#">Blogs</a></li>
+                            <li><a href="contact.php"> Contact Us</a></li>
+                            <li><a href="blogs.php">Blogs</a></li>
                         </ul>
                     </div>
                     <div class="footer-area-quick-menu-two ml-127 mr-92">
                       
                         <ul>
-                            <li><a href="#">Creative Production</a></li>
-                            <li><a href="#">MarCom Consulting</a></li>
-                            <li><a href="#">Tech Consulting</a></li>
-                            <li><a href="#">MarCom Lab</a></li>
-                            <li><a href="#">Our Partners</a></li>
+                            <li><a href="creative-production.php">Creative Production</a></li>
+                            <li><a href="marcom-consulting.php">MarCom Consulting</a></li>
+                            <li><a href="tech-consulting.php">Tech Consulting</a></li>
+                            <li><a href="marcom-lab.php">MarCom Lab</a></li>
+                            <li><a href="partners.php">Our Partners</a></li>
                             <li><a href="#">Experts & Scientist</a></li>
                         </ul>
                     </div>
@@ -60,7 +60,7 @@
                         </ul>
                     </div>
                     <div class="footer-area-sand-messege ml-110">
-                        <a href="contact.html">
+                        <a href="contact.php">
                             <h4>Message Us</h4>
                             <span class="icon-send"></span>
                         </a>

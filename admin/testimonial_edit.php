@@ -16,10 +16,10 @@ include 'check_session.php';
         $testimonial_id = $_POST['testimonial_id'];
         $name = $_POST['name'];
         $review = $_POST['review'];
-        $address = $_POST['address'];
+        $designation = $_POST['designation'];
 
 
-        $sql = "UPDATE add_testimonial SET name='$name', review='$review', address='$address'";
+        $sql = "UPDATE add_testimonial SET name='$name', review='$review', designation='$designation'";
 
         if (!empty($_FILES["image"]["tmp_name"])) {
             $target_file = "testimonial_uploads/" . basename($_FILES["image"]["name"]);
@@ -69,8 +69,8 @@ include 'check_session.php';
                                         placeholder="Enter Review" value="<?php echo htmlspecialchars($row['review']); ?>">
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label>Address</label>
-                                    <input type="text" name="address" class="form-control" placeholder="Enter Address" value="<?php echo htmlspecialchars($row['address']); ?>">
+                                    <label>Designation</label>
+                                    <input type="text" name="designation" class="form-control" placeholder="Enter designation" value="<?php echo htmlspecialchars($row['designation']); ?>">
                                 </div>
                             </div>
 

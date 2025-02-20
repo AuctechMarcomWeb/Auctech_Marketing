@@ -311,7 +311,7 @@ if (isset($_GET['page_url'])) {
                         </div>
 
                         <div class="blog-details-news mb-89">
-                            <h5>Recent News</h5>
+                            <h5>Recent Blogs</h5>
                             <div class="title-border-3"></div>
                             <div class="blog-details-news-content mt-30">
                                 <?php

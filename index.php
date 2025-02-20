@@ -614,42 +614,45 @@
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-7">
-                        <div class="testimonial-area-main-slider ">
-                            <div class="testimonial-area-slider-wrapper">
-                                <div class="fast-slider testimonial-active-slider">
-                                    <?php
-                                    include('db_con.php');
-                                    $result = $con->query("SELECT name, review, designation, image_path FROM add_testimonial");
-                                    while ($row = $result->fetch_assoc()):
-                                    ?>
-                                    <div class="slider-image d-flex justify-content-center">
-                                        <img src="admin/<?php echo $row['image_path']; ?>" alt="Testimonial image">
-                                    </div>
-                                    <?php endwhile; ?>
-                                </div>
+    <div class="testimonial-area-main-slider">
+        <div class="testimonial-area-slider-wrapper">
+            <div class="fast-slider testimonial-active-slider">
+                <?php
+                include('db_con.php');
+                // Fetch testimonial data from the database
+                $result = $con->query("SELECT name, review, designation, image_path FROM add_testimonial");
+                while ($row = $result->fetch_assoc()):
+                ?>
+                <div class="slider-image d-flex justify-content-center">
+                    <img src="admin/<?php echo $row['image_path']; ?>" alt="Testimonial image">
+                </div>
+                <?php endwhile; ?>
+            </div>
 
-                                <div class="second-slider testimonial-active-slider-nav mt-25">
-                                    <?php
-                                    $result->data_seek(0);
-                                    while ($row = $result->fetch_assoc()):
-                                    ?>
-                                    <div class="slider-wrapper">
-                                        <div class="slider-pra mb-15">
-                                            <p><?php echo $row['review']; ?></p>
-                                        </div>
-                                        <div class="slider-info d-flex justify-content-between">
-                                            <div class="slider-info-text">
-                                                <h5 class="mb-8"><?php echo $row['name']; ?></h5>
-                                                <span><?php echo $row['designation']; ?></span>
-                                            </div>
-                                            <span class="icon-quote"></span>
-                                        </div>
-                                    </div>
-                                    <?php endwhile; ?>
-                                </div>
-                            </div>
-                        </div>
+            <div class="second-slider testimonial-active-slider-nav mt-25">
+                <?php
+                // Reset the pointer to the beginning of the result set for the second loop
+                $result->data_seek(0);
+                while ($row = $result->fetch_assoc()):
+                ?>
+                <div class="slider-wrapper">
+                    <div class="slider-pra mb-15">
+                        <p><?php echo $row['review']; ?></p>
                     </div>
+                    <div class="slider-info d-flex justify-content-between">
+                        <div class="slider-info-text">
+                            <h5 class="mb-8"><?php echo $row['name']; ?></h5>
+                            <span><?php echo $row['designation']; ?></span>
+                        </div>
+                        <span class="icon-quote"></span>
+                    </div>
+                </div>
+                <?php endwhile; ?>
+            </div>
+        </div>
+    </div>
+</div>
+
                 </div>
             </div>
         </div>

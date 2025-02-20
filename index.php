@@ -118,47 +118,23 @@
                     <div class="row gx-0">
                         <div class="col-12 col-xl-8 col-lg-8 col-md-12 p-0">
                             <div class="hero-area-slider-section hero-slider-active p-relative z-index-11">
+                                <?php
+                                    include('db_con.php');
+                                    $result = $con->query("SELECT image_path, title FROM add_banner");
+
+                                    while ($row = $result->fetch_assoc()):
+                                ?>
                                 <div class="hero-area-slider-wrapper p-relative z-index-11">
                                     <div class="hero-area-slider-image">
-                                        <img src="images/hero/hone-1-hero-slider-img.png" alt="">
+                                        <img src="admin/<?php echo ($row['image_path']); ?>" alt="">
                                     </div>
                                     <div class="hero-area-slider-inner-text p-absolute">
                                         <p class="hero-area-slider-text-1 mb-13">We Provide</p>
-                                        <h3 class="hero-area-slider-text-2 mb-17">Creative <span>Design</span></h3>
+                                        <h3 class="hero-area-slider-text-2 mb-17"><?php echo ($row['title']); ?></h3>
                                         <div class="title-border-1"></div>
                                     </div>
                                 </div>
-                                <div class="hero-area-slider-wrapper p-relative z-index-11">
-                                    <div class="hero-area-slider-image">
-                                        <img src="images/hero/hone-1-hero-slider-img.png" alt="">
-                                    </div>
-                                    <div class="hero-area-slider-inner-text p-absolute">
-                                        <p class="hero-area-slider-text-1 mb-13">We Provide</p>
-                                        <h3 class="hero-area-slider-text-2 mb-17">Website <span>Development</span></h3>
-                                        <div class="title-border-1"></div>
-                                    </div>
-                                </div>
-                                <div class="hero-area-slider-wrapper p-relative z-index-11">
-                                    <div class="hero-area-slider-image">
-                                        <img src="images/hero/hone-1-hero-slider-img.png" alt="">
-                                    </div>
-                                    <div class="hero-area-slider-inner-text p-absolute">
-                                        <p class="hero-area-slider-text-1 mb-13">We Provide</p>
-                                        <h3 class="hero-area-slider-text-2 mb-17">Software <span>Development</span></h3>
-                                        <div class="title-border-1"></div>
-                                    </div>
-                                </div>
-                                <div class="hero-area-slider-wrapper p-relative z-index-11">
-                                    <div class="hero-area-slider-image">
-                                        <img src="images/hero/hone-1-hero-slider-img.png" alt="">
-                                    </div>
-                                    <div class="hero-area-slider-inner-text p-absolute">
-                                        <p class="hero-area-slider-text-1 mb-13">We Provide</p>
-                                        <h3 class="hero-area-slider-text-2 mb-17">Android/IOS <span>Mobile Apps</span>
-                                        </h3>
-                                        <div class="title-border-1"></div>
-                                    </div>
-                                </div>
+                                <?php endwhile; ?> 
                             </div>
                         </div>
                         <div class="col-xl-4 col-lg-4 ">

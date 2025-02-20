@@ -137,8 +137,7 @@
                                 <div class="title-border-5"></div>
                             </div>
                             <div class="contact-form">
-                                <form  method="POST" action="save_contact.php"
-                                id="enquiryForm">
+                                <form  method="POST" action="save_contact.php" id="enquiryForm" class="contact-form">
                                     <div class="contract-group gx-1">
                                         <div class="input-col">
                                             <label class="name" for="fullname">Full Name:</label>
@@ -172,7 +171,8 @@
                                         <textarea id="messages" name="message" class="no-border"></textarea>
                                     </div>
                                     <div class="page-btn mt-60">
-                                        <a href="#" type="submit">Send Message</a>
+                                        <button type="submit" name="submit"><a>Send Message</a></button>
+                                        <!-- <a href="#" type="submit">Send Message</a> -->
                                     </div>
                                 </form>
                             </div>
@@ -231,18 +231,18 @@ $(document).ready(function() {
             data: formData,
             success: function(response) {
                 if (response == 'success') {
-                    // Display a success message using SweetAlert
+                    
                     Swal.fire({
                         icon: 'success',
                         title: 'Message Sent!',
                         text: 'Your message has been sent successfully.',
                     }).then(function() {
-                        // Clear the form fields after successful submission
+                        
                         $('#enquiryForm')[0]
                     .reset(); 
                     });
                 } else {
-                    // Display an error message
+                    
                     Swal.fire({
                         icon: 'error',
                         title: 'Oops...',
@@ -251,7 +251,7 @@ $(document).ready(function() {
                 }
             },
             error: function() {
-                // In case of AJAX failure
+                
                 Swal.fire({
                     icon: 'error',
                     title: 'Oops...',

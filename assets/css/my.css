@@ -1,0 +1,436 @@
+#header {
+  z-index: 99;
+}
+.header1-logo-block img {
+  height: 85px;
+}
+
+.preloader1 .title-logo img {
+  height: 90px;
+  object-fit: contain;
+  animation: none;
+}
+
+.vl-header-area1 .vl-home-thumb img {
+  height: 150px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #e5e7eb;
+}
+
+.vl-header-area1 .vl-mega-menu {
+  left: -550px;
+}
+
+.vl-header-area1 .vl-main-menu ul > li > a {
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+.vl-header-area1 .vl-main-menu {
+  padding: 10px 15px;
+}
+.img1 img{
+  object-fit:cover;
+}
+.theme-btn1 {
+  padding: 10px 20px;
+}
+
+.theme-btn1 {
+  color: #ffffff;
+  background-color: #e03636;
+}
+
+.theme-btn1:hover {
+  color: #ffffff;
+}
+
+.theme-btn1::after {
+  background-color: #b23777;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.vl-header-area1.header-sticky {
+  background-color: #ffffff;
+  border-bottom: 1px solid #c7345b;
+}
+
+/* Default - transparent header, so white text */
+.vl-main-menu ul li a {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+/* When sticky header appears */
+.header-sticky .vl-main-menu ul li a {
+  color: #000;
+}
+
+.contact4-form-area .single-input input,
+.contact4-form-area .single-input textarea,
+.contact4-form-area .single-input .nice-select.wide {
+  background-color: #ffffff;
+}
+
+.auctech-color {
+  background: linear-gradient(45deg, #c12e88, #f1592a, #f5b316);
+  /* Adjust colors as per your logo */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  font-weight: 600;
+  /* optional for better visibility */
+  text-decoration: none;
+}
+
+.heading10 span.sub-title {
+  color: #ffffff;
+  background: linear-gradient(45deg, #9e3c8c, #f4a224);
+}
+
+.nice-select ul {
+  height: 250px;
+  overflow-y: auto !important;
+  scrollbar-width: thin;
+  /* For Firefox */
+  scrollbar-color: #ccc transparent;
+}
+
+.nice-select ul li:hover {
+  background-color: white;
+}
+
+/* For Chrome, Edge, and Safari */
+.nice-select ul::-webkit-scrollbar {
+  width: 4px;
+  /* Set scrollbar width */
+}
+
+.nice-select ul::-webkit-scrollbar-track {
+  background: transparent;
+  /* Optional: transparent track */
+}
+
+.nice-select ul::-webkit-scrollbar-thumb {
+  background-color: #999;
+  /* Scrollbar thumb color */
+  border-radius: 10px;
+  /* Rounded edges */
+}
+
+.image-shape1 img {
+  height: 150px;
+}
+
+.image-shape2 img {
+  height: 200px;
+}
+
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.image1 img {
+  animation: floatUpDown 3s ease-in-out infinite;
+}
+
+/* ----- */
+
+/* Floating Social Media Bar Style Starts Here */
+
+.fl-fl {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 4px;
+  width: 190px;
+  position: fixed;
+  right: -147px;
+  z-index: 1000;
+  font-size: 14px !important;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  background: linear-gradient(45deg, #963782, #f8b820);
+}
+
+.fl-fl img {
+  height: 25px;
+  width: 25px;
+  margin: 10px;
+}
+
+.float-sm .fa {
+  font-size: 20px;
+  color: #000;
+  padding: 10px 0;
+  width: 40px;
+  margin-left: 8px;
+}
+
+.float-sm .fa {
+  font-size: 20px;
+  color: #000;
+  padding: 0px 0;
+  width: 25px;
+  margin-left: 8px;
+}
+
+.fl-fl:hover {
+  right: 0;
+}
+
+.fl-fl a {
+  color: #000 !important;
+  text-decoration: none;
+  text-align: center;
+  line-height: 43px !important;
+  vertical-align: top !important;
+  font-weight: 700;
+}
+
+.float-fb {
+  top: 170px;
+}
+
+.float-tw {
+  top: 225px;
+}
+
+.float-rs {
+  top: 280px;
+}
+
+.float-ig {
+  top: 335px;
+}
+
+.float-wh {
+  top: 390px;
+}
+
+.float-sm .fa {
+  color: #ffffff;
+}
+
+.fl-fl a {
+  color: #ffffff !important;
+}
+.inner-hero {
+  min-height: 310px;
+}
+
+.inner-hero .inner-main-heading {
+  padding-top: 0px;
+}
+/* ------ */
+@media only screen and (min-width: 1200px) and (max-width: 1499px) {
+  .vl-header-area1 .vl-mega-menu {
+    width: 1140px;
+    left: -451px;
+  }
+
+  .hero1 {
+    min-height: auto;
+    height: 100vh;
+  }
+
+  .hero1 .hero1-images .main-images {
+    height: 515px;
+    top: 235px;
+  }
+
+  .main-heading1 h1 {
+    font-size: 55px;
+    line-height: 50px;
+  }
+
+  .image1 img {
+    height: 500px;
+  }
+
+  .image-shape1 img {
+    height: 120px;
+  }
+
+  .image-shape2 img {
+    height: 140px;
+  }
+
+  p {
+    font-size: 14px !important;
+  }
+
+  .heading1 h2 {
+    font-size: 40px;
+  }
+
+  .heading10 h2 {
+    font-size: 35px;
+  }
+
+  .heading4 h2 {
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  .heading9 h5 a,
+  .heading9 h4 a {
+    font-size: 16px;
+  }
+
+  .about1-box.box1 .bottom-heading {
+    padding-top: 70px;
+  }
+
+  .about1-box.box2 .bottom-heading {
+    padding-top: 120px;
+  }
+
+  .about1-box.box3 .bottom-heading {
+    padding-top: 200px;
+  }
+
+  .theme-btn1,
+  .theme-btn18__text {
+    font-size: 16px;
+  }
+
+  .faq6-images .text-count {
+    bottom: -25px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .vl-header-area1 .vl-mega-menu {
+    left: -311px;
+    width: 929px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .header1-bg {
+    padding: 0px 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header1-logo-block img {
+    height: 70px;
+  }
+
+  .main-heading1 h1 {
+    font-size: 27px;
+    line-height: 40px;
+  }
+
+  .main-heading1 span.sub-title {
+    font-size: 20px;
+  }
+
+  .main-heading1 {
+    padding-top: 160px;
+  }
+
+  p {
+    font-size: 15px !important;
+  }
+
+  .heading1 h2 {
+    font-size: 35px;
+  }
+
+  .heading10 h2 {
+    font-size: 30px;
+  }
+
+  .heading4 h2 {
+    font-size: 28px;
+  }
+
+  .heading9 h5 a,
+  .heading9 h4 a {
+    font-size: 16px;
+  }
+
+  .heading6 h3 {
+    font-size: 24px;
+  }
+
+  .mob-dnone {
+    display: none;
+  }
+
+  .image-shape1 img,
+  .image-shape2 img {
+    object-fit: contain;
+  }
+
+  .hero1 .hero1-images {
+    height: 454px;
+  }
+
+  .vl-header-area1 .vl-header-action-item button {
+    border: 1px solid #c03868;
+    color: #fbc122;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+  }
+
+  .about1-box.box1 .bottom-heading,
+  .about1-box.box2 .bottom-heading,
+  .about1-box.box3 .bottom-heading {
+    padding-top: 50px;
+  }
+
+  .contact4-images .shape {
+    right: 0px;
+    height: 80px;
+  }
+
+  .image-anime,
+  .cta6-form-area {
+    margin-top: 20px;
+  }
+
+  .vl-blog-9-item .vl-blog-9-thumb {
+    height: auto;
+  }
+
+  .vl-footer-widget-black6 .vl-footer-list ul li a {
+    font-size: 16px;
+  }
+
+  .vl-copyright6 .copyright-text a {
+    font-size: 14px;
+  }
+
+  .copyright-text {
+    flex-wrap: wrap;
+  }
+
+  .tes10-single-slider .bottom-area .author-info .author-text {
+    padding-left: 10px;
+  }
+
+  .slick-slide img {
+    height: 35px;
+    width: 35px;
+  }
+}

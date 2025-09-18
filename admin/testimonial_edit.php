@@ -10,7 +10,8 @@ $que = "SELECT * FROM add_testimonial WHERE id = $user_id";
 $res = mysqli_query($con, $que);
 $row = mysqli_fetch_array($res);
 
-if (isset($_POST['submit'])) {
+if (isset($_POST['submit']))
+{
     $testimonial_id = $_POST['testimonial_id'];
     $name = $_POST['name'];
     $review = $_POST['review'];
@@ -18,40 +19,44 @@ if (isset($_POST['submit'])) {
 
     $sql = "UPDATE add_testimonial SET name='$name', review='$review', designation='$designation'";
 
-    if (!empty($_FILES["image"]["tmp_name"])) {
+    if (!empty($_FILES["image"]["tmp_name"]))
+    {
         $target_dir = "testimonial_uploads/";
+        $file = $_FILES["image"]["tmp_name"];
+        $ext = strtolower(pathinfo($_FILES["image"]["name"], PATHINFO_EXTENSION));
 
-        // Generate unique filename
-        $unique_id = uniqid();
-        $original_filename = basename($_FILES["image"]["name"]);
-        $image_extension = pathinfo($original_filename, PATHINFO_EXTENSION);
-        $new_filename = $unique_id . '.' . $image_extension;
+        // Only allow images
+        $allowed = ['jpg', 'jpeg', 'png', 'gif'];
+        if (!in_array($ext, $allowed))
+        {
+            die("Only JPG, JPEG, PNG, GIF images are allowed.");
+        }
+
+        $new_filename = uniqid() . '.' . $ext;
         $target_file = $target_dir . $new_filename;
 
-        if (getimagesize($_FILES["image"]["tmp_name"]) === false) {
-            echo "File is not an image.";
-            exit;
+        if (!move_uploaded_file($file, $target_file))
+        {
+            die("Error uploading image.");
         }
 
-        if (move_uploaded_file($_FILES["image"]["tmp_name"], $target_file)) {
-            $sql .= ", image_path='$target_file'";
-        } else {
-            echo "Error uploading image.";
-            exit;
-        }
+        $sql .= ", image_path='$target_file'";
     }
 
     $sql .= " WHERE id='$testimonial_id'";
 
-    if ($con->query($sql) === TRUE) {
+    if ($con->query($sql) === TRUE)
+    {
         header('Location: testimonials_list.php');
         exit;
-    } else {
+    } else
+    {
         echo "Error: " . $con->error;
     }
 
     $con->close();
 }
+
 
 include('header.php');
 ?>
@@ -71,24 +76,28 @@ include('header.php');
                         <form method="POST" action="" enctype="multipart/form-data">
                             <div class="form-row">
                                 <div class="form-group col-md-6">
-                                    <input type="hidden" name="testimonial_id" class="form-control" value="<?php echo htmlspecialchars($row['id']); ?>">
+                                    <input type="hidden" name="testimonial_id" class="form-control"
+                                        value="<?php echo htmlspecialchars($row['id']); ?>">
                                     <label>Profile Image </label>
-                                    <input type="file" name='image' class="form-control file">
+                                    <input type="file" name='image' class="form-control file" accept="image/*">
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label>Client Name </label>
-                                    <input type="text" name='name' class="form-control file" required placeholder="Enter Name" value="<?php echo htmlspecialchars($row['name']); ?>">
-                                </div> 
+                                    <input type="text" name='name' class="form-control file" required
+                                        placeholder="Enter Name" value="<?php echo htmlspecialchars($row['name']); ?>">
+                                </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label>Client Review</label>
-                                    <input type="text" name='review' class="form-control"
-                                        placeholder="Enter Review" value="<?php echo htmlspecialchars($row['review']); ?>">
+                                    <input type="text" name='review' class="form-control" placeholder="Enter Review"
+                                        value="<?php echo htmlspecialchars($row['review']); ?>">
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label>Designation</label>
-                                    <input type="text" name="designation" class="form-control" placeholder="Enter designation" value="<?php echo htmlspecialchars($row['designation']); ?>">
+                                    <input type="text" name="designation" class="form-control"
+                                        placeholder="Enter designation"
+                                        value="<?php echo htmlspecialchars($row['designation']); ?>">
                                 </div>
                             </div>
 
@@ -100,10 +109,10 @@ include('header.php');
         </div>
     </div>
     <style>
-    .note-editable {
-        height: 400px;
-    }
+        .note-editable {
+            height: 400px;
+        }
     </style>
     <?php
     include('footer.php');
-?>
+    ?>

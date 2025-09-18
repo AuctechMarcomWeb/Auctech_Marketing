@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
-    <title>Auctech Admin | Login</title>
-    <link rel="icon" type="image/png" href="./assets/img/favicon.png"/>
+    <title>Admin Login</title>
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
     <!-- GLOBAL MAINLY STYLES-->
     <link href="./assets/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="./assets/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
@@ -17,124 +17,126 @@
     <link href="./assets/css/pages/auth-light.css" rel="stylesheet" />
     <style>
         /* Basic styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-.content form {
-    padding: 15px 20px 20px 20px;
-    background-color: rgba(252, 248, 253, 0.0);
-    color: #761143;
-}
-.content {
-    background: rgb(255 255 255 / 28%);
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgb(98 13 41 / 96%);
-    width: 100%;
-    max-width: 500px;
-    box-sizing: border-box;
-}
-h2.login-title {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #333;
-}
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
 
-.form-group {
-    margin-bottom: 15px;
-}
+        .content form {
+            padding: 15px 20px 20px 20px;
+            background-color: rgba(252, 248, 253, 0.0);
+            color: white;
+        }
 
-.input-group-icon {
-    position: relative;
-}
+        .content {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px #b93e76;
+            width: 100%;
+            max-width: 500px;
+            box-sizing: border-box;
+        }
 
-.input-group-icon .input-icon {
-    position: absolute;
-    top: 50%;
-    left: 12px;
-    transform: translateY(-50%);
-}
+        h2.login-title {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
 
-.form-control {
-    width: 100%;
-    padding: 12px 20px;
-    padding-left: 40px;
-    border: 1px solid #761143;
-    border-radius: 5px;
-    font-size: 14px;
-}
+        .form-group {
+            margin-bottom: 15px;
+        }
 
-.ui-checkbox {
-    display: flex;
-    align-items: center;
-}
+        .input-group-icon {
+            position: relative;
+        }
 
-.ui-checkbox input {
-    margin-right: 5px;
-}
+        .input-group-icon .input-icon {
+            position: absolute;
+            top: 50%;
+            left: 12px;
+            transform: translateY(-50%);
+        }
 
-.btn-primary {
-    background-color:#761143;
-    border-color: #761143;
-    color: white;
-    padding: 12px;
-    border-radius: 5px;
-    text-align: center;
-    width: 100%;
-}
+        .form-control {
+            width: 100%;
+            padding: 12px 20px;
+            padding-left: 40px;
+            border: 1px solid #b93e76;
+            border-radius: 5px;
+            font-size: 14px;
+        }
 
-.btn-primary:hover {
-    background-color: #761143;
-}
-label{
-    font-size: 15px;
-    color: black;
-    font-weight: bold;
-    color: #761143;
-}
+        .ui-checkbox {
+            display: flex;
+            align-items: center;
+        }
 
-/* Responsive design */
-@media (max-width: 768px) {
-    .content {
-        padding: 20px;
-        width: 90%;
-    }
+        .ui-checkbox input {
+            margin-right: 5px;
+        }
 
-    h2.login-title {
-        font-size: 20px;
-    }
-}
+        .btn-primary {
+            background: linear-gradient(45deg, #b93e76, #f49e33);
+            border: 1px solid #b93e76;
+            color: white;
+            padding: 12px;
+            border-radius: 5px;
+            text-align: center;
+            width: 100%;
+        }
 
-@media (max-width: 576px) {
-    .form-control {
-        padding: 10px 15px;
-    }
-    
-    .btn-primary {
-        padding: 10px;
-    }
-}
-.bg-silver-300{
-    background-image:url('./assets/img/background.png');
-    background-repeat: no-repeat;
-    object-fit: cover;
-    background-size:cover;
-}
+        .btn-primary:hover {
+            background: linear-gradient(45deg, #b93e76, #f49e33);
+            border: 1px solid #b93e76;
+        }
 
+        label {
+            font-size: 15px;
+            color: black;
+            font-weight: bold;
+            color: white;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .content {
+                padding: 20px;
+                width: 90%;
+            }
+
+            h2.login-title {
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .form-control {
+                padding: 10px 15px;
+            }
+
+            .btn-primary {
+                padding: 10px;
+            }
+        }
+
+        .bg-silver-300 {
+            background-color: #fff !important;
+        }
     </style>
 </head>
 
 <body class="bg-silver-300">
     <div class="content">
         <form id="login-form" method="POST" action="check_login.php">
-            <h2 class="login-title mb-5 text-white">Admin Login</h2>
+            <h2 class="login-title mb-5 text-dark">Admin Login</h2>
             <div class="form-group">
                 <div class="input-group-icon right">
                     <label for="email">Email</label>
@@ -150,13 +152,14 @@ label{
                 </div>
             </div>
             <div class="form-group d-flex justify-content-between">
-                <label class="ui-checkbox ui-checkbox-info">
+                <label class="ui-checkbox ui-checkbox-info text-dark">
                     <input type="checkbox">
                     <span class="input-span"></span> Remember me
                 </label>
             </div>
-            <div class="form-group">
-                <button type="submit" name="Submit" class="btn btn-primary btn-block mt-3 mb-0 fw-bold fs-4" style="color: white">Log In</button>
+            <div class="form-group mt-3">
+                <button type="submit" name="Submit"
+                    class="btn btn-primary btn-block text-white mt-3 mb-0 fw-bold fs-4 mt-5">Log In</button>
             </div>
         </form>
     </div>
@@ -171,26 +174,26 @@ label{
     <script src="assets/js/app.js" type="text/javascript"></script>
     <!-- PAGE LEVEL SCRIPTS-->
     <script type="text/javascript">
-    $(function() {
-        $('#login-form').validate({
-            errorClass: "help-block",
-            rules: {
-                email: {
-                    required: true,
-                    email: true
+        $(function () {
+            $('#login-form').validate({
+                errorClass: "help-block",
+                rules: {
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    password: {
+                        required: true
+                    }
                 },
-                password: {
-                    required: true
-                }
-            },
-            highlight: function(e) {
-                $(e).closest(".form-group").addClass("has-error")
-            },
-            unhighlight: function(e) {
-                $(e).closest(".form-group").removeClass("has-error")
-            },
+                highlight: function (e) {
+                    $(e).closest(".form-group").addClass("has-error")
+                },
+                unhighlight: function (e) {
+                    $(e).closest(".form-group").removeClass("has-error")
+                },
+            });
         });
-    });
     </script>
 </body>
 

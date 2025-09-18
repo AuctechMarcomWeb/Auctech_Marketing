@@ -3,45 +3,57 @@ include 'check_session.php';
 if (isset($_POST['submit'])) {
     include '../db_con.php';
 
-    // Get form data
     $name = $_POST['name'];
     $review = $_POST['review'];
     $designation = $_POST['designation'];
 
-    $target_dir = "testimonial_uploads/";
+    if (!empty($_FILES["image"]["tmp_name"])) {
+        $target_dir = "testimonial_uploads/";
+        $file = $_FILES["image"]["tmp_name"];
+        $original_filename = basename($_FILES["image"]["name"]);
+        $ext = strtolower(pathinfo($original_filename, PATHINFO_EXTENSION));
 
-   
-    $unique_id = uniqid(); 
-    $original_filename = basename($_FILES["image"]["name"]);
-    $image_extension = pathinfo($original_filename, PATHINFO_EXTENSION);
-    $new_filename = $unique_id . '.' . $image_extension;
-    $target_file = $target_dir . $new_filename;
+        // Allowed extensions
+        $allowed = ['jpg', 'jpeg', 'png', 'gif'];
 
-   
-    if (getimagesize($_FILES["image"]["tmp_name"]) === false) {
-        echo "File is not an image.";
-        exit;
-    }
+        if (!in_array($ext, $allowed)) {
+            die("Only JPG, JPEG, PNG, GIF images are allowed.");
+        }
 
-   
-    if (!move_uploaded_file($_FILES["image"]["tmp_name"], $target_file)) {
-        echo "Error uploading file.";
-        exit;
-    }
+        // Check if file is an actual image
+        if (getimagesize($file) === false) {
+            die("File is not a valid image.");
+        }
 
-    
-    $sql = "INSERT INTO add_testimonial (name, review, designation, image_path) 
-            VALUES ('$name', '$review', '$designation', '$target_file')";
+        // Check file size (max 3 MB)
+        if ($_FILES["image"]["size"] > 3 * 1024 * 1024) {
+            die("File size must be 3 MB or less.");
+        }
 
-    if ($con->query($sql) === TRUE) {
-        header('Location: testimonials_list.php');
-        exit;
+        $new_filename = uniqid() . '.' . $ext;
+        $target_file = $target_dir . $new_filename;
+
+        if (!move_uploaded_file($file, $target_file)) {
+            die("Error uploading file.");
+        }
+
+        // Insert into database
+        $sql = "INSERT INTO add_testimonial (name, review, designation, image_path) 
+                VALUES ('$name', '$review', '$designation', '$target_file')";
+
+        if ($con->query($sql) === TRUE) {
+            header('Location: testimonials_list.php');
+            exit;
+        } else {
+            echo "Error: " . $con->error;
+        }
     } else {
-        echo "Error: " . $con->error;
+        die("Please select an image to upload.");
     }
 
     $con->close();
 }
+
 ?>
 
 
@@ -64,7 +76,7 @@ if (isset($_POST['submit'])) {
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label>Profile Image </label>
-                                    <input type="file" name='image' class="form-control file" required>
+                                    <input type="file" name='image' class="form-control file" required accept="image/*">
                                 </div>   
                                 <div class="form-group col-md-6">
                                     <label>Client Name </label>

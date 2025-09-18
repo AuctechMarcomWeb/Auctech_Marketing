@@ -66,7 +66,7 @@ if ($user_id > 0) {
                                 </div>
                                 <div class="col-sm-6 form-group">
                                     <label>Main Image</label>
-                                    <input class="form-control" type="file" name="images[]">
+                                    <input class="form-control" type="file" name="images[]" accept="image/*">
                                 </div>
                             </div>
                             <div class="row">
@@ -76,7 +76,7 @@ if ($user_id > 0) {
                                 </div>
                                 <div class="col-sm-6 form-group">
                                     <label>Choose Multiple Images</label>
-                                    <input class="form-control" type="file" name="logos[]" multiple>
+                                    <input class="form-control" type="file" name="logos[]" multiple accept="image/*">
                                 </div>
                             </div>
                             <div class="row">

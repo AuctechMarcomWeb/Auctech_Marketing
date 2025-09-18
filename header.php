@@ -5,21 +5,21 @@
             <div class="row align-items-center">
                 <div class="col-lg-2 col-md-6 col-6">
                     <div class="vl-logo">
-                        <a href="https://auctechmarketing.com/" class="header1-logo-block"><img src="assets/img/logo/logo.png" alt=""></a>
+                        <a href="" class="header1-logo-block"><img src="assets/img/logo/logo.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-8 d-none d-lg-block text-end">
                     <div class="vl-main-menu">
                         <nav class="vl-mobile-menu-active">
                             <ul>
-                                <li> <a href="https://auctechmarketing.com/">Home </a></li>
+                                <li> <a href="">Home </a></li>
 
                                 <li class="has-dropdown"><a href="#">About <span><i
                                                 class="fa-regular fa-angle-down"></i></span></a>
                                     <ul class="sub-menu">
-                                        <li><a href="https://auctechmarketing.com/about.php"> About Us</a></li>
-                                        <li><a href="https://auctechmarketing.com/our-founder.php"> Our Founder</a></li>
-                                        <li><a href="https://auctechmarketing.com/career-at-auctech.php"> Career at Auctech </a></li>
+                                        <li><a href="about.php"> About Us</a></li>
+                                        <li><a href="our-founder.php"> Our Founder</a></li>
+                                        <li><a href="career-at-auctech.php"> Career at Auctech </a></li>
                                     </ul>
                                 </li>
 
@@ -32,10 +32,10 @@
                                                         <div class="img1">
                                                             <img src="assets/img/demo/demo1.jpg" alt="">
                                                         </div>
-                                                        <a class="text" href="https://auctechmarketing.com/branding-digital-consulting.php">Branding
+                                                        <a class="text" href="branding-digital-consulting.php">Branding
                                                             & Digital PR Consulting</a>
                                                         <div class="btn-area1">
-                                                            <a class="theme-btn2" href="https://auctechmarketing.com/branding-digital-consulting.php"><span class="arrow1"><i
+                                                            <a class="theme-btn2" href="branding-digital-consulting.php"><span class="arrow1"><i
                                                                         class="text-dark fa-solid fa-arrow-right"></i></span></a>
                                                         </div>
                                                         <div class="space20 d-lg-none d-block"></div>
@@ -46,10 +46,10 @@
                                                         <div class="img1">
                                                             <img src="assets/img/demo/demo2.jpg" alt="">
                                                         </div>
-                                                        <a class="text" href="https://auctechmarketing.com/digital-marketing-consulting.php">Digital
+                                                        <a class="text" href="digital-marketing-consulting.php">Digital
                                                             Marketing Consulting</a>
                                                         <div class="btn-area1">
-                                                            <a class="theme-btn2" href="https://auctechmarketing.com/digital-marketing-consulting.php"><span class="arrow1"><i
+                                                            <a class="theme-btn2" href="digital-marketing-consulting.php"><span class="arrow1"><i
                                                                         class="text-dark fa-solid fa-arrow-right"></i></span></a>
                                                         </div>
                                                         <div class="space20 d-lg-none d-block"></div>
@@ -60,10 +60,10 @@
                                                         <div class="img1">
                                                             <img src="assets/img/demo/demo3.jpg" alt="">
                                                         </div>
-                                                        <a class="text" href="https://auctechmarketing.com/social-media-marketing.php">Social Media
+                                                        <a class="text" href="social-media-marketing.php">Social Media
                                                             Marketing (SMM)</a>
                                                         <div class="btn-area1">
-                                                            <a class="theme-btn2" href="https://auctechmarketing.com/social-media-marketing.php"><span class="arrow1"><i
+                                                            <a class="theme-btn2" href="social-media-marketing.php"><span class="arrow1"><i
                                                                         class="text-dark fa-solid fa-arrow-right"></i></span></a>
                                                         </div>
 
@@ -75,10 +75,10 @@
                                                         <div class="img1">
                                                             <img src="assets/img/demo/demo4.jpg" alt="">
                                                         </div>
-                                                        <a class="text" href="https://auctechmarketing.com/search-engine-marketing.php">Search
+                                                        <a class="text" href="search-engine-marketing.php">Search
                                                             Engine Marketing (SEM)</a>
                                                         <div class="btn-area1">
-                                                            <a class="theme-btn2" href="https://auctechmarketing.com/search-engine-marketing.php"><span class="arrow1"><i
+                                                            <a class="theme-btn2" href="search-engine-marketing.php"><span class="arrow1"><i
                                                                         class="text-dark fa-solid fa-arrow-right"></i></span></a>
                                                         </div>
 
@@ -91,9 +91,9 @@
                                                         <div class="img1">
                                                             <img src="assets/img/demo/demo5.jpg" alt="">
                                                         </div>
-                                                        <a class="text" href="https://auctechmarketing.com/seo-services.php">SEO Services</a>
+                                                        <a class="text" href="seo-services.php">SEO Services</a>
                                                         <div class="btn-area1">
-                                                            <a class="theme-btn2" href="https://auctechmarketing.com/seo-services.php"><span class="arrow1"><i
+                                                            <a class="theme-btn2" href="seo-services.php"><span class="arrow1"><i
                                                                         class="text-dark fa-solid fa-arrow-right"></i></span></a>
                                                         </div>
                                                     </div>
@@ -106,9 +106,9 @@
                                                         <div class="img1">
                                                             <img src="assets/img/demo/demo6.jpg" alt="">
                                                         </div>
-                                                        <a class="text" href="https://auctechmarketing.com/pay-per-click.php">Pay-Per-Click Services (PPC)</a>
+                                                        <a class="text" href="pay-per-click.php">Pay-Per-Click Services (PPC)</a>
                                                         <div class="btn-area1">
-                                                            <a class="theme-btn2" href="https://auctechmarketing.com/pay-per-click.php"><span class="arrow1"><i
+                                                            <a class="theme-btn2" href="pay-per-click.php"><span class="arrow1"><i
                                                                         class="text-dark fa-solid fa-arrow-right"></i></span></a>
                                                         </div>
 
@@ -120,9 +120,9 @@
                                                         <div class="img1">
                                                             <img src="assets/img/demo/demo7.jpg" alt="">
                                                         </div>
-                                                        <a class="text" href="https://auctechmarketing.com/website-developemnt.php">Website Development</a>
+                                                        <a class="text" href="website-developemnt.php">Website Development</a>
                                                         <div class="btn-area1">
-                                                            <a class="theme-btn2" href="https://auctechmarketing.com/website-developemnt.php"><span class="arrow1"><i
+                                                            <a class="theme-btn2" href="website-developemnt.php"><span class="arrow1"><i
                                                                         class="text-dark fa-solid fa-arrow-right"></i></span></a>
                                                         </div>
 
@@ -134,9 +134,9 @@
                                                         <div class="img1">
                                                             <img src="assets/img/demo/demo8.jpg" alt="">
                                                         </div>
-                                                        <a class="text" href="https://auctechmarketing.com/mobile-app-development.php">Mobile App Development</a>
+                                                        <a class="text" href="mobile-app-development.php">Mobile App Development</a>
                                                         <div class="btn-area1">
-                                                            <a class="theme-btn2" href="https://auctechmarketing.com/mobile-app-development.php"><span class="arrow1"><i
+                                                            <a class="theme-btn2" href="mobile-app-development.php"><span class="arrow1"><i
                                                                         class="text-dark fa-solid fa-arrow-right"></i></span></a>
                                                         </div>
 
@@ -148,9 +148,9 @@
                                                         <div class="img1">
                                                             <img src="assets/img/demo/demo9.jpg" alt="">
                                                         </div>
-                                                        <a class="text" href="https://auctechmarketing.com/ecommerce-solutions.php">E-commerce Solutions</a>
+                                                        <a class="text" href="ecommerce-solutions.php">E-commerce Solutions</a>
                                                         <div class="btn-area1">
-                                                            <a class="theme-btn2" href="https://auctechmarketing.com/ecommerce-solutions.php"><span class="arrow1"><i
+                                                            <a class="theme-btn2" href="ecommerce-solutions.php"><span class="arrow1"><i
                                                                         class="text-dark fa-solid fa-arrow-right"></i></span></a>
                                                         </div>
 
@@ -172,10 +172,10 @@
                                                         <div class="img1">
                                                             <img src="assets/img/demo/demo1.jpg" alt="">
                                                         </div>
-                                                        <a class="text" href="https://auctechmarketing.com/wealthbuilder-crm.php">Wealth Builder CRM</a>
+                                                        <a class="text" href="wealthbuilder-crm.php">Wealth Builder CRM</a>
                                                         <div class="btn-area1">
                                                             <a class="theme-btn2"
-                                                                href="https://auctechmarketing.com/wealthbuilder-crm.php"><span
+                                                                href="wealthbuilder-crm.php"><span
                                                                     class="arrow1"><i
                                                                         class="text-dark fa-solid fa-arrow-right"></i></span></a>
                                                         </div>
@@ -187,10 +187,10 @@
                                                         <div class="img1">
                                                             <img src="assets/img/demo/demo2.jpg" alt="">
                                                         </div>
-                                                        <a class="text" href="https://auctechmarketing.com/auctech-realpro.php">Auctech RealPro</a>
+                                                        <a class="text" href="auctech-realpro.php">Auctech RealPro</a>
                                                         <div class="btn-area1">
                                                             <a class="theme-btn2"
-                                                                href="https://auctechmarketing.com/auctech-realpro.php"><span
+                                                                href="auctech-realpro.php"><span
                                                                     class="arrow1"><i
                                                                         class="text-dark fa-solid fa-arrow-right"></i></span></a>
                                                         </div>
@@ -202,10 +202,10 @@
                                                         <div class="img1">
                                                             <img src="assets/img/demo/demo3.jpg" alt="">
                                                         </div>
-                                                        <a class="text" href="https://auctechmarketing.com/sales-promotions.php">Sales Promotions</a>
+                                                        <a class="text" href="sales-promotions.php">Sales Promotions</a>
                                                         <div class="btn-area1">
                                                             <a class="theme-btn2"
-                                                                href="https://auctechmarketing.com/sales-promotions.php"><span
+                                                                href="sales-promotions.php"><span
                                                                     class="arrow1"><i
                                                                         class="text-dark fa-solid fa-arrow-right"></i></span></a>
                                                         </div>
@@ -218,10 +218,10 @@
                                                         <div class="img1">
                                                             <img src="assets/img/demo/demo4.jpg" alt="">
                                                         </div>
-                                                        <a class="text" href="https://auctechmarketing.com/loyalty-program.php">Loyalty Programs</a>
+                                                        <a class="text" href="loyalty-program.php">Loyalty Programs</a>
                                                         <div class="btn-area1">
                                                             <a class="theme-btn2"
-                                                                href="https://auctechmarketing.com/loyalty-program.php"><span
+                                                                href="loyalty-program.php"><span
                                                                     class="arrow1"><i
                                                                         class="text-dark fa-solid fa-arrow-right"></i></span></a>
                                                         </div>
@@ -235,10 +235,10 @@
                                                         <div class="img1">
                                                             <img src="assets/img/demo/demo5.jpg" alt="">
                                                         </div>
-                                                        <a class="text" href="https://auctechmarketing.com/Employee-Engagement-&-Rewards.php">Employee Engagement &
+                                                        <a class="text" href="Employee-Engagement-&-Rewards.php">Employee Engagement &
                                                 Rewards</a>
                                                         <div class="btn-area1">
-                                                            <a class="theme-btn2" href="https://auctechmarketing.com/Employee-Engagement-&-Rewards.php"><span
+                                                            <a class="theme-btn2" href="Employee-Engagement-&-Rewards.php"><span
                                                                     class="arrow1"><i
                                                                         class="text-dark fa-solid fa-arrow-right"></i></span></a>
                                                         </div>
@@ -252,10 +252,10 @@
                                                         <div class="img1">
                                                             <img src="assets/img/demo/demo6.jpg" alt="">
                                                         </div>
-                                                        <a class="text" href="https://auctechmarketing.com/ChannelLoyaltyPrograms.php">Channel Loyalty Programs
+                                                        <a class="text" href="ChannelLoyaltyPrograms.php">Channel Loyalty Programs
                                                            </a>
                                                         <div class="btn-area1">
-                                                            <a class="theme-btn2" href="https://auctechmarketing.com/ChannelLoyaltyPrograms.php"><span
+                                                            <a class="theme-btn2" href="ChannelLoyaltyPrograms.php"><span
                                                                     class="arrow1"><i
                                                                         class="text-dark fa-solid fa-arrow-right"></i></span></a>
                                                         </div>
@@ -270,8 +270,8 @@
                                     </div>
                                 </li>
                                  <li> <a href="https://www.auctech.in/portfolio/" target="_blank">Portfolio</a></li>
-                                <li> <a href="https://auctechmarketing.com/case-study.php">Case Studies </a></li>
-                                <li> <a href="https://auctechmarketing.com/blogs.php">Blogs</a></li>
+                                <li> <a href="case-study.php">Case Studies </a></li>
+                                <li> <a href="blogs.php">Blogs</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -279,7 +279,7 @@
                 <div class="col-lg-2 col-md-6 col-6">
                     <div class="vl-header1-btns text-end d-none d-lg-block">
                         <div class="buttons">
-                            <a href="https://auctechmarketing.com/contact.php" class="theme-btn1">Contact Us</a>
+                            <a href="contact.php" class="theme-btn1">Contact Us</a>
                         </div>
                     </div>
                     <div class="vl-header-action-item d-block d-lg-none">
@@ -299,7 +299,7 @@
     <div class="vl-offcanvas-wrapper">
         <div class="vl-offcanvas-header d-flex justify-content-between align-items-center mb-90">
             <div class="vl-offcanvas-logo">
-                <a href="https://auctechmarketing.com/" class="header1-logo-block"><img style="height: 70px;" src="assets/img/logo/logo.png"
+                <a href="" class="header1-logo-block"><img style="height: 70px;" src="assets/img/logo/logo.png"
                         alt=""></a>
             </div>
             <div class="vl-offcanvas-close">

@@ -144,13 +144,20 @@
                     <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
                 </div>
             </div>
-            <div class="form-group">
+            <div class="form-group" style="position: relative;">
                 <div class="input-group-icon right">
                     <label for="password">Password</label>
-                    <div class="input-icon"><i class="fa fa-lock font-16 mt-4"></i></div>
-                    <input type="password" name="password" class="form-control" placeholder="Password" required>
+                    <div class="input-icon"></div>
+                    <input type="password" name="password" class="form-control" placeholder="Password" required
+                        style="padding-right: 40px;">
+                    <img id="togglePassword" src="https://img.icons8.com/ios-filled/50/737373/hide.png"
+                        alt="Show/Hide Password"
+                        style="position: absolute; right: 10px; top: 70%; transform: translateY(-50%); cursor: pointer; width: 25px; height: 25px;">
                 </div>
             </div>
+
+
+
             <div class="form-group d-flex justify-content-between">
                 <label class="ui-checkbox ui-checkbox-info text-dark">
                     <input type="checkbox">
@@ -173,6 +180,20 @@
     <!-- CORE SCRIPTS-->
     <script src="assets/js/app.js" type="text/javascript"></script>
     <!-- PAGE LEVEL SCRIPTS-->
+    <script>
+        const passwordInput = document.querySelector('input[name="password"]');
+        const togglePassword = document.getElementById('togglePassword');
+
+        togglePassword.addEventListener('click', () => {
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                togglePassword.src = "https://img.icons8.com/ios-filled/50/737373/visible.png";
+            } else {
+                passwordInput.type = 'password';
+                togglePassword.src = "https://img.icons8.com/ios-filled/50/737373/hide.png";
+            }
+        });
+    </script>
     <script type="text/javascript">
         $(function () {
             $('#login-form').validate({
@@ -195,6 +216,7 @@
             });
         });
     </script>
+
 </body>
 
 </html>

@@ -27,7 +27,6 @@ include('header.php');
             <div class="ibox-body">
 
                 <table class="table table-striped table-bordered table-hover" id="example-table" cellspacing="0"
-
                     width="100%">
 
                     <thead>
@@ -35,15 +34,12 @@ include('header.php');
                         <tr>
 
                             <th>S.No.</th>
-
                             <th>Name</th>
-
-
-
                             <th>Phone</th>
-
+                            <th>Email</th>
+                            <th>Enquiry Type</th>
+                            <th>Message</th>
                             <th>Date</th>
-
                             <th>Action</th>
 
                         </tr>
@@ -56,14 +52,13 @@ include('header.php');
 
                         include('../db_con.php');
 
-                        $fetch_query = "SELECT * FROM query_form";
+                        $fetch_query = "SELECT * FROM contact";
 
                         $result = mysqli_query($con, $fetch_query);
 
                         $i = 1;
 
                         while ($row = mysqli_fetch_array($result))
-
                         {
 
                             ?>
@@ -77,19 +72,18 @@ include('header.php');
 
 
                                 <td><?php echo $row['phone']; ?></td>
-
-
-
-                                <td><?php echo $row['created_at']; ?></td>
+                                <td><?php echo $row['email']; ?></td>
+                                <td><?php echo $row['subject']; ?></td>
+                                <td><?php echo $row['message']; ?></td>
+                                <td><?php echo date('Y-m-d', strtotime($row['added_date'])); ?></td>
 
                                 <td>
 
-                                    <form method="POST" action="query_dlt.php">
+                                    <form method="POST" action="contactquery_dlt.php">
 
                                         <input type="hidden" name="user_id" value="<?php echo $row['id']; ?>">
 
                                         <button type="submit" class="btn btn-danger shadow btn-xs sharp" name="delete"
-
                                             onclick="return confirm('are you sure?')"><i class="fa fa-trash"></i></button>
 
                                     </form>
@@ -119,7 +113,6 @@ include('header.php');
     </div>
 
     <style>
-
         .dataTables_length {
 
             display: none;
@@ -133,7 +126,6 @@ include('header.php');
             display: none;
 
         }
-
     </style>
 
     <?php

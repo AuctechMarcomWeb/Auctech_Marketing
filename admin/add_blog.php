@@ -47,7 +47,7 @@ include 'check_session.php';
                                 </div>
                                 <div class="col-sm-6 form-group">
                                     <label>Main Image</label>
-                                    <input class="form-control" type="file" name="images[]" required>
+                                    <input class="form-control" type="file" name="images[]" required accept="image/*">
                                 </div>
                             </div>
                             <div class="row">
@@ -57,7 +57,7 @@ include 'check_session.php';
                                 </div>
                                 <div class="col-sm-6 form-group">
                                     <label>Choose Multiple Images</label>
-                                    <input class="form-control" type="file" name="logos[]" multiple required>
+                                    <input class="form-control" type="file" name="logos[]" multiple required accept="image/*">
                                 </div>
                             </div>
                             <div class="row">

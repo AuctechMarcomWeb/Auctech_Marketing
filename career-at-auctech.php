@@ -343,7 +343,8 @@
                                         <div class="col-md-6">
                                             <div class="single-input">
                                                 <label class="pb-1" for="resume">Upload Resume</label>
-                                                <input type="file" placeholder="resume" name="image_path">
+                                                <input type="file" name="image_path" placeholder="Resume"
+                                                    accept=".pdf,.doc,.docx,.cv,image/*">
                                             </div>
                                         </div>
                                         <div class="col-md-12">
@@ -398,7 +399,8 @@
                                     From websites to marketing, we’ve got you covered.
                                     Let’s create something impactful together.</p>
                                 <div class="buttons">
-                                    <a href="https://auctechmarketing.com/contact.php" class="theme-btn1 mt-4">Contact Us</a>
+                                    <a href="https://auctechmarketing.com/contact.php" class="theme-btn1 mt-4">Contact
+                                        Us</a>
                                 </div>
                             </div>
                         </div>
@@ -440,10 +442,10 @@
         $(document).ready(function () {
             $('#enquiryForm').submit(function (e) {
                 e.preventDefault();
-                // Phone number validation
+
+                
                 var phone = $('input[name="phone"]').val().trim();
                 var phonePattern = /^[0-9]{10}$/;
-
                 if (!phonePattern.test(phone)) {
                     Swal.fire({
                         icon: 'warning',
@@ -452,6 +454,22 @@
                     });
                     return false;
                 }
+
+              
+                var fileInput = $('input[name="image_path"]')[0];
+                if (fileInput.files.length > 0) {
+                    var file = fileInput.files[0];
+                    var maxSize = 3 * 1024 * 1024;
+                    if (file.size > maxSize) {
+                        Swal.fire({
+                            icon: 'warning',
+                            title: 'File Too Large',
+                            text: 'File size should not exceed 3 MB.'
+                        });
+                        return false;
+                    }
+                }
+
                 var formData = new FormData(this);
 
                 $.ajax({
@@ -474,7 +492,7 @@
                             Swal.fire({
                                 icon: 'error',
                                 title: 'Oops...',
-                                text: 'Invalid file type. Please upload a PDF, DOC, or DOCX. Please try again later.',
+                                text: 'Invalid file type. Please upload a PDF, DOC, or DOCX.',
                             });
                         }
                     },
@@ -483,13 +501,14 @@
                         Swal.fire({
                             icon: 'error',
                             title: 'Oops...',
-                            text: 'Invalid file type. Please upload a PDF, DOC, or DOCX. Please try again later.',
+                            text: 'Something went wrong. Please try again later.',
                         });
                     }
                 });
             });
-        });
+        });s
     </script>
+
 </body>
 
 </html>

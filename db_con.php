@@ -1,9 +1,9 @@
 <?php
 
     $servername = 'localhost';
-    $username = 'u622085619_auctech_db';
-    $password = 'Auctech@123';
-    $database = "u622085619_auctech_db";
+    $username = 'root';
+    $password = '';
+    $database = "auctech_marketing";
 
     $con = new mysqli($servername, $username, $password, $database);
 

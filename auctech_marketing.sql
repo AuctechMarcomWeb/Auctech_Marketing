@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.2
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3306
--- Generation Time: Sep 17, 2025 at 12:47 PM
--- Server version: 11.8.3-MariaDB-log
--- PHP Version: 7.2.34
+-- Host: 127.0.0.1
+-- Generation Time: Sep 18, 2025 at 12:22 PM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,32 +18,8 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `u622085619_auctech_db`
+-- Database: `auctech_marketing`
 --
-
--- --------------------------------------------------------
-
---
--- Table structure for table `add_banner`
---
-
-CREATE TABLE `add_banner` (
-  `id` int(11) NOT NULL,
-  `type` varchar(500) DEFAULT NULL,
-  `title` varchar(200) DEFAULT NULL,
-  `details` varchar(100) DEFAULT NULL,
-  `image_path` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `add_banner`
---
-
-INSERT INTO `add_banner` (`id`, `type`, `title`, `details`, `image_path`) VALUES
-(6, 'Banner', 'Creative <span>Design</span>', 'Creative <span>Design</span>', 'banner_uploads/1.jpg'),
-(7, 'Banner', 'Android/IOS <span>Mobile Apps</span>', 'Android/IOS <span>Mobile Apps</span>', 'banner_uploads/3.jpg'),
-(8, 'Banner', 'Software <span>Development</span>', 'Software <span>Development</span>', 'banner_uploads/5.jpg'),
-(9, 'Banner', 'Website <span>Development</span>', 'Website <span>Development</span>', 'banner_uploads/6.jpg');
 
 -- --------------------------------------------------------
 
@@ -101,36 +77,18 @@ INSERT INTO `add_testimonial` (`id`, `name`, `image_path`, `review`, `designatio
 
 CREATE TABLE `add_user` (
   `s_no` int(11) NOT NULL,
-  `user_id` varchar(255) DEFAULT NULL,
-  `firstname` varchar(255) DEFAULT NULL,
-  `lastname` varchar(255) DEFAULT NULL,
-  `username` varchar(255) DEFAULT NULL,
+  `name` varchar(255) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
-  `register` varchar(255) DEFAULT NULL,
-  `suggestion` varchar(255) DEFAULT NULL,
-  `mobile_no` varchar(255) DEFAULT NULL,
   `password` varchar(255) DEFAULT NULL,
-  `confirm_password` varchar(255) DEFAULT NULL,
-  `resettoken` varchar(255) DEFAULT NULL,
-  `resettokenexpire` date DEFAULT NULL,
-  `task_wallet` int(100) DEFAULT 0,
-  `game_wallet` int(100) DEFAULT 0,
-  `BANK_NAME` varchar(100) NOT NULL,
-  `IFSC_CODE` varchar(100) NOT NULL,
-  `ACC_HOLDER_NM` varchar(100) NOT NULL,
-  `ACC_NUMBERS` int(100) NOT NULL,
-  `ACC_TYPE` varchar(100) NOT NULL,
-  `LAST_LOGIN` varchar(100) NOT NULL,
-  `ACC_STATUS` varchar(100) NOT NULL DEFAULT 'active',
-  `TYPE` varchar(50) NOT NULL DEFAULT 'USER'
+  `confirm_password` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `add_user`
 --
 
-INSERT INTO `add_user` (`s_no`, `user_id`, `firstname`, `lastname`, `username`, `email`, `register`, `suggestion`, `mobile_no`, `password`, `confirm_password`, `resettoken`, `resettokenexpire`, `task_wallet`, `game_wallet`, `BANK_NAME`, `IFSC_CODE`, `ACC_HOLDER_NM`, `ACC_NUMBERS`, `ACC_TYPE`, `LAST_LOGIN`, `ACC_STATUS`, `TYPE`) VALUES
-(2, '786', 'Zaid', 'Rizvi', 'zaid', 'admin@auctechmarketing.com', 'test', '', '9335438189', 'Admin@auctech321', 'Admin@auctech321', NULL, NULL, 0, 999, '', '', '', 0, '', '', 'active', 'ADMIN');
+INSERT INTO `add_user` (`s_no`, `name`, `email`, `password`, `confirm_password`) VALUES
+(1, 'Admin', 'auctech-marketing@gmail.com', '$2y$10$X8A2CtsE2q10BS48hRyxYOgV51TkwuGzdZzyNClylLIKNXVqfFYyO', NULL);
 
 -- --------------------------------------------------------
 
@@ -204,8 +162,7 @@ CREATE TABLE `book_appointement` (
 --
 
 INSERT INTO `book_appointement` (`id`, `email`, `phone`, `date`, `time`, `service_type`, `message`, `token`, `created_at`) VALUES
-(1, 'ratnaauctech@gmail.com', '1234561234', '2025-09-17', '05:45 PM', 'Digital Marketing Consulting', 'sd', 'a82ce7242d0b45cf221e97365e8348ca', '2025-09-17'),
-(2, 'mohitpara641@gmail.com', '7905491970', '2025-09-17', '06:09 PM', 'Digital Marketing Consulting', 'testing', 'b6333dbec260d7b426a9d50c6782abc5', '2025-09-17');
+(1, 'ratnaauctech@gmail.com', '1234561234', '2025-09-17', '05:45 PM', 'Digital Marketing Consulting', 'sd', 'a82ce7242d0b45cf221e97365e8348ca', '2025-09-17');
 
 -- --------------------------------------------------------
 
@@ -344,12 +301,6 @@ CREATE TABLE `service_inquery` (
 --
 
 --
--- Indexes for table `add_banner`
---
-ALTER TABLE `add_banner`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `add_job`
 --
 ALTER TABLE `add_job`
@@ -409,16 +360,10 @@ ALTER TABLE `service_inquery`
 --
 
 --
--- AUTO_INCREMENT for table `add_banner`
---
-ALTER TABLE `add_banner`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
-
---
 -- AUTO_INCREMENT for table `add_job`
 --
 ALTER TABLE `add_job`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `add_testimonial`
@@ -430,7 +375,7 @@ ALTER TABLE `add_testimonial`
 -- AUTO_INCREMENT for table `add_user`
 --
 ALTER TABLE `add_user`
-  MODIFY `s_no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `s_no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `blogs`
@@ -448,7 +393,7 @@ ALTER TABLE `blogs_images`
 -- AUTO_INCREMENT for table `book_appointement`
 --
 ALTER TABLE `book_appointement`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `contact`

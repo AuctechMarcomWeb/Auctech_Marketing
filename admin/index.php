@@ -7,7 +7,7 @@ $total_blog = $con->query("SELECT COUNT(*) AS total FROM blogs")->fetch_assoc()[
 $total_query = $con->query("SELECT COUNT(*) AS total FROM contact")->fetch_assoc()['total'];
 $total_job = $con->query("SELECT COUNT(*) AS total FROM add_job")->fetch_assoc()['total'];
 $total_appointment = $con->query("SELECT COUNT(*) AS total FROM book_appointement")->fetch_assoc()['total'];
-$total_service = $con->query("SELECT COUNT(*) AS total FROM service_inquery")->fetch_assoc()['total'];
+
 ?>
 <!-- END SIDEBAR-->
 <div class="content-wrapper">
@@ -30,7 +30,7 @@ $total_service = $con->query("SELECT COUNT(*) AS total FROM service_inquery")->f
                 <div class="ibox bg-info color-white widget-stat">
                     <div class="ibox-body">
                         <h2 class="m-b-5 font-strong"><?php echo $total_query; ?></h2>
-                        <div class="m-b-5"><a href='querylist' class='text-white fw-bold'>Total Query</a></div><i
+                        <div class="m-b-5"><a href='contact_querylist' class='text-white fw-bold'>Total Query</a></div><i
                             class="widget-stat-icon"><img width="50" height="50"
                                 src="https://img.icons8.com/ios-filled/50/FFFFFF/ask-question.png"
                                 alt="ask-question" /></i>
@@ -63,20 +63,7 @@ $total_service = $con->query("SELECT COUNT(*) AS total FROM service_inquery")->f
                     </div>
                 </a>
             </div>
-            <div class="col-lg-3 col-md-6">
-                <a href="service_list.php">
-                    <div class="ibox bg-danger color-white widget-stat">
-                        <div class="ibox-body">
-                            <h2 class="m-b-5 font-strong"><?php echo $total_service; ?></h2>
-                            <div class="m-b-5 fw-bold mt-2">Total Contact Query </div><i class=" widget-stat-icon"><img
-                                    width="50" height="50"
-                                    src="https://img.icons8.com/glyph-neue/64/FFFFFF/question-shield.png"
-                                    alt="google-blog-search" /></i>
-
-                        </div>
-                    </div>
-                </a>
-            </div>
+            
         </div>
     </div>
     <?php

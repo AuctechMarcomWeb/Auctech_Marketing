@@ -76,7 +76,7 @@
                             <span class="nav-label">Dashboard</span>
                         </a>
                     </li>
-                   
+
                     <li class="mt-2">
                         <a href="javascript:;"><i class="sidebar-item-icon"><img width="30" height="30"
                                     src="https://img.icons8.com/ios-filled/50/FFFFFF/google-blog-search.png"
@@ -104,7 +104,13 @@
                             </li>
                         </ul>
                     </li>
-
+                    <li>
+                        <a class="" href="contact_querylist"><i class="sidebar-item-icon"><img width="30" height="30"
+                                    src="https://img.icons8.com/ios-filled/50/FFFFFF/ask-question.png"
+                                    alt="ask-question" /></i>
+                            <span class="nav-label">Contact Query List</span>
+                        </a>
+                    </li>
 
                     <li>
                         <a class="" href="querylist"><i class="sidebar-item-icon"><img width="30" height="30"
@@ -134,7 +140,7 @@
                             </li>
                         </ul>
                     </li>
-                   
+
                 </ul>
             </div>
         </nav>

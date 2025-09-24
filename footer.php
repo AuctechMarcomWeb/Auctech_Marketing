@@ -84,9 +84,9 @@
                                 <img src="assets/img/icons/footer-contact-icon2.svg" alt="">
                             </div>
                             <div class="text">
-                                <a href="#">Flat 101, Shaligram Building, <br>
-                                    New Jiamau, 1090 Chauraha, <br>
-                                    Lucknow, Uttar Pradesh 226001</a>
+                                <a href="#">New Jiamau, 1090 Chauraha, 167/101,<br>
+                                   Shaligram Building, Hazratganj,  <br>
+                                    Lucknow, Uttar Pradesh 226001</a> 
                             </div>
                         </div>
 

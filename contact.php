@@ -54,6 +54,21 @@
         .text-justify {
             text-align: justify;
         }
+        .contact-page-box {
+            margin-bottom:10px
+        }
+        .contact-page-box .content h3 {
+            font-size:18px;
+        }
+        .contact-page-box {
+            
+            padding: 14px;
+        }
+        @media (max-width: 767px) {
+            .contact-page-box {
+                margin-top: 4px;
+            }
+        }
     </style>
 
 </head>
@@ -179,6 +194,67 @@
         <div class="contact2 sp">
             <div class="container">
                 <div class="row">
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="contact-page-box">
+                            <div class="icon">
+                                <img src="assets/img/icons/contact-page-icon2.svg" alt="">
+                            </div>
+                            <div class="content">
+                                <h3>Customer Support</h3>
+                                <a href="tel:919838075493">+91 9838075493</a>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="contact-page-box">
+                            <div class="icon">
+                                <img src="assets/img/icons/contact-page-icon2.svg" alt="">
+                            </div>
+                            <div class="content">
+                                <h3>Creative Department</h3>
+                                <a href="tel:919838075496">+91 9838075496</a>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="contact-page-box">
+                            <div class="icon">
+                                <img src="assets/img/icons/contact-page-icon2.svg" alt="">
+                            </div>
+                            <div class="content">
+                                <h3>Software Development</h3>
+                                <a href="tel:9198380775495">+91 98380775495</a>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="contact-page-box">
+                            <div class="icon">
+                                <img src="assets/img/icons/contact-page-icon2.svg" alt="">
+                            </div>
+                            <div class="content">
+                                <h3>Sales Department</h3>
+                                <a href="tel:919450529384">+91 9450529384</a>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="contact-page-box">
+                            <div class="icon">
+                                <img src="assets/img/icons/contact-page-icon2.svg" alt="">
+                            </div>
+                            <div class="content">
+                                <h3>Sales Department</h3>
+                                <a href="tel:918004051509">+91 8004051509</a>
+                               
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="contact-page-box">
                             <div class="icon">
@@ -197,12 +273,27 @@
                                 <img src="assets/img/icons/contact-page-icon2.svg" alt="">
                             </div>
                             <div class="content">
-                                <h3>Phone Number</h3>
-                                <a href="tel:919838075493">+91-9838075493</a>
-                                <a href="tel:919616171814">+91-9616171814</a>
+                                <h3>Digital Marketing / Administration</h3>
+                                <a href="tel:919336357172">+91 9336357172</a>
+                               
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="contact-page-box">
+                            <div class="icon">
+                                <img src="assets/img/icons/contact-page-icon2.svg" alt="">
+                            </div>
+                            <div class="content">
+                                <h3>Web Department / MERN Department</h3>
+                                <a href="tel:919450563916">+91 9450563916</a>
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
 
                     <div class="col-lg-4 col-md-6">
                         <div class="contact-page-box">
@@ -211,9 +302,9 @@
                             </div>
                             <div class="content">
                                 <h3>Office Address</h3>
-                                <a href="https://maps.app.goo.gl/SoCERSrCcdt6ci9S9" target="_blank">Flat 101, Shaligram
-                                    Building, New Jiamau,
-                                    1090 Chauraha, Lucknow, Uttar Pradesh 226001</a>
+                                <a href="https://maps.app.goo.gl/SoCERSrCcdt6ci9S9" target="_blank">
+                                    New Jiamau, 1090 Chauraha, 167/101, Shaligram Building, Hazratganj, Lucknow, Uttar Pradesh 226001
+                                </a>
                             </div>
                         </div>
                     </div>

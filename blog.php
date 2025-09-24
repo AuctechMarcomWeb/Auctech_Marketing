@@ -61,6 +61,10 @@ if (isset($_GET['page_url']))
     <!--=====JQUERY=======-->
     <script src="../assets/js/jquery-3-7-1.min.js"></script>
     <style>
+    @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+        body, a, p, span, h1, h2, h3, h4, h5, h6, button, input, placeholder, select, option, textarea{
+            font-family: "Karla", sans-serif;
+        }
         .header-tranperent {
             position: relative;
         }
@@ -569,8 +573,8 @@ if (isset($_GET['page_url']))
                     <img src="../assets/img/icons/footer-contact-icon3.svg" alt="">
                 </div>
                 <div class="text">
-                    <a href="tel:6386452123">+91 6386452123</a>,
-                    <a href="tel:9838075490">+91 9838075490</a>
+                    <a href="tel:9616171814">+91 9616171814</a>,
+                    <a href="tel:9838075493">+91 9838075493</a>
                 </div>
             </div>
 
@@ -723,7 +727,7 @@ if (isset($_GET['page_url']))
                                         </div>
                                         <div class="content">
                                             <a href="<?php echo $blog_url; ?>" class="date"><img src="../assets/img/icons/date1.svg" alt=""><?php echo date("j F Y", strtotime($blog['created_at'])); ?></a>
-                                            <h4><a href="blog-details.html"><?php echo $heading; ?></a></h4>
+                                            <h4><a href="<?php echo $blog_url; ?>"><?php echo $heading; ?></a></h4>
                                         </div>
                                     </div>
 
@@ -843,8 +847,8 @@ if (isset($_GET['page_url']))
                                 <img src="../assets/img/icons/footer-contact-icon3.svg" alt="">
                             </div>
                             <div class="text">
-                                <a href="tel:6386452123"> +91 6386452123</a>,
-                                <a href="tel:9838075490"> +91 9838075490</a>
+                                <a href="tel:9616171814"> +91 9616171814</a>,
+                                <a href="tel:9838075493"> +91 9838075493</a>
                             </div>
                         </div>
 

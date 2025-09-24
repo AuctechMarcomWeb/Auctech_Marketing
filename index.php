@@ -76,7 +76,7 @@
 
       <!--===== HERO AREA START =====-->
 
-      <div class="hero1" style="background-image: url(assets/img/bg/hero1-bg.jpg);">
+      <div class="hero1" style="background-image: url(assets/img/bg/hero-bg.jpg);">
          <div class="container">
             <div class="row align-items-center">
                <div class="col-lg-6">
@@ -608,7 +608,7 @@
 
       <!--==== TESTIMONIAL AREA START =====-->
 
-      <div class="tes10 sp">
+     <div class="tes10 sp">
          <div class="container">
             <div class="row">
                <div class="col-lg-6 m-auto text-center">
@@ -621,12 +621,11 @@
             <div class="row">
                <div class="tes10-slider-all mt-60 _relative" data-aos="fade-up" data-aos-duration="1000">
                   <?php
-                  include('db_con.php');
-                  $result = $con->query("SELECT * FROM add_testimonial")
-                     ?>
+                                include('db_con.php');
+                                $result = $con->query("SELECT name, review, designation, image_path FROM add_testimonial ORDER by id DESC");
+                                ?>
                   <div class="tes10-slider">
-                     <?php while ($row = $result->fetch_assoc())
-                     { ?>
+                     <?php while ($row = $result->fetch_assoc()): ?>
                         <div class="tes10-single-slider">
                            <div class="quote">
                               <img src="assets/img/icons/quote10.svg" alt="">
@@ -649,7 +648,7 @@
                               </div>
                            </div>
                         </div>
-                     <?php } ?>
+                      <?php endwhile; ?>
                   </div>
 
                   <div class="tes10-slider-btns">

@@ -65,8 +65,8 @@
                                 <img src="assets/img/icons/footer-contact-icon3.svg" alt="">
                             </div>
                             <div class="text">
-                                <a href="tel:6386452123"> +91 6386452123</a>,
-                                <a href="tel:9838075490"> +91 9838075490</a>
+                                <a href="tel:9616171814"> +91 9616171814</a>,
+                                <a href="tel:9838075493"> +91 9838075493</a>
                             </div>
                         </div>
 
@@ -141,6 +141,6 @@
     </div>
     <div class="fl-fl float-wh">
         <img class="fa-whatsapp" src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp--v1.png" alt="whatsapp--v1">
-        <a href="https://wa.me/916386452123" target="_blank">Follow us!</a>
+        <a href="https://wa.me/919616171814" target="_blank">Follow us!</a>
     </div>
 </div>

@@ -1,39 +1,37 @@
 <?php
 session_start();
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+if (isset($_POST['Submit'])) {
     include '../db_con.php';
 
-    // Input sanitization (basic)
-    $email = trim($_POST['email']);
+    $email = $_POST['email'];
     $password = $_POST['password'];
 
-   
-    $stmt = $con->prepare("SELECT name, password FROM add_user WHERE email = ?");
+    // Prepared statement
+    $stmt = $con->prepare("SELECT * FROM add_user WHERE email = ?");
     $stmt->bind_param("s", $email);
     $stmt->execute();
     $result = $stmt->get_result();
 
-    if ($row = $result->fetch_assoc()) {
-        
-        if (password_verify($password, $row['password'])) {
-            
-            
-            session_regenerate_id(true);
+    if ($result->num_rows > 0) {
+        $row = $result->fetch_assoc();
 
+       
+        if (password_verify($password, $row['password'])) {
             $_SESSION['login_status'] = true;
-            $_SESSION['firstname']   = $row['name'];  
-                    
+            $_SESSION['firstname'] = $row['name'];  
+            $_SESSION['id'] = $row['id'];          
 
             header('Location: index.php');
             exit();
+        } else {
+            echo "<script>alert('Email or Password is incorrect!'); window.location = 'login.php';</script>";
         }
+    } else {
+        echo "<script>alert('Email or Password is incorrect!'); window.location = 'login.php';</script>";
     }
-
-   
-    echo "<script>alert('Email or Password is incorrect!'); window.location = 'login.php';</script>";
-
 } else {
     echo "No data submitted!";
 }
 ?>
+

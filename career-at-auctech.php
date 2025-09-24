@@ -180,6 +180,98 @@
         </div>
 
         <!--===== HERO AREA START =====-->
+        
+         <div class="contact2 sp">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-6 mt-60">
+                        <div class="heading4">
+                            <div class="contact2-form">
+                                <span class="sub-title" data-aos="zoom-in-left" data-aos-duration="900"><img
+                                        src="assets/img/icons/span1.svg" alt="">Apply Now </span>
+                                <div>
+                                    <h2 class="auctech-color">Lets Work Together</h2>
+                                </div>
+                                <p class="mt-16" data-aos="fade-right" data-aos-duration="900">We are always looking for
+                                    talented individuals to join our team. Check out our latest job openings and take
+                                    the next step in your career.</p>
+                                <form method="POST" action="admin/apply_job.php" id="enquiryForm"
+                                    enctype="multipart/form-data" data-aos="fade-right" data-aos-duration="1000">
+                                    <div class="row mt-16">
+                                        <div class="col-md-6">
+                                            <div class="single-input">
+                                                <input type="text" placeholder="Full Name" name="name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="single-input">
+                                                <input type="number" placeholder="Phone Number" name="phone">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="single-input">
+                                                <input type="email" placeholder="Email Address" name="email">
+                                            </div>
+                                        </div>
+                                        <style>
+                                            
+                                            
+                                            .list .option:hover {
+                                              background-color: #b66ea554;
+                                            }
+                                        </style>
+
+                                        <div class="col-md-6">
+                                            <div class="single-input">
+                                               <label class="pb-1" for="position">Position Applying For</label>
+                                                <select class="wide" name="job_type">
+                                                    <option value="">Select Position</option>
+                                                    <option value="MERN Developer">MERN Developer</option>
+                                                    <option value="React Native Developer">React Native Developer</option>
+                                                    <option value=".Net Developer">.Net Developer</option>
+                                                    <option value="Frontend Developer">Frontend Developer</option>
+                                                    <option value="PHP Developer">PHP Developer</option>
+                                                    <option value="Android Developer">Android Developer</option>
+                                                    <option value="UI/UX Designer">UI/UX Designer</option>
+                                                    <option value="Software Tester / QA">Software Tester / QA</option>
+                                                    <option value="Cloud Engineer">Cloud Engineer</option>
+                                                    <option value="Project Manager">Project Manager</option>
+                                                    <option value="Cyber Security Engineer">Cyber Security Engineer</option>
+                                                    <option value="Other">Other</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="single-input">
+                                                <label class="pb-1" for="resume">Upload Resume</label>
+                                                <input type="file" name="image_path" placeholder="Resume"
+                                                    accept=".pdf,.doc,.docx,.cv,image/*">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="single-input">
+                                                <textarea rows="4" placeholder="Why should we hire you?" name="message"></textarea>
+                                            </div>
+
+                                            <div class="button mt-30">
+                                                <button class="theme-btn1" type="submit" name="submit">Submit</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="contact2-image mt-60 image-anime reveal ml-40 md:ml-0 sm:ml-0 md:mt-30 sm:mt-30">
+                            <img class="w-full" src="assets/img/others/contact2-image.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!--===== CHOOSE AREA START =====-->
 
@@ -295,80 +387,7 @@
 
         <!--===== CONTACT AREA START =====-->
 
-        <div class="contact2 sp">
-            <div class="container">
-
-                <div class="row">
-                    <div class="col-lg-6 mt-60">
-                        <div class="heading4">
-                            <div class="contact2-form">
-                                <span class="sub-title" data-aos="zoom-in-left" data-aos-duration="900"><img
-                                        src="assets/img/icons/span1.svg" alt="">Apply Now </span>
-                                <div>
-                                    <h2 class="auctech-color">Lets Work Together</h2>
-                                </div>
-                                <p class="mt-16" data-aos="fade-right" data-aos-duration="900">We are always looking for
-                                    talented individuals to join our team. Check out our latest job openings and take
-                                    the next step in your career.</p>
-                                <form method="POST" action="admin/apply_job.php" id="enquiryForm"
-                                    enctype="multipart/form-data" data-aos="fade-right" data-aos-duration="1000">
-                                    <div class="row mt-16">
-                                        <div class="col-md-6">
-                                            <div class="single-input">
-                                                <input type="text" placeholder="Full Name" name="name">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="single-input">
-                                                <input type="number" placeholder="Phone Number" name="phone">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="single-input">
-                                                <input type="email" placeholder="Email Address" name="email">
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="single-input">
-                                                <label class="pb-1" for="position">Position Applying For</label>
-                                                <select class="wide" name="job_type">
-                                                    <option value="">Select Position</option>
-                                                    <option value="MERN Developer">MERN Developer</option>
-                                                    <option value="React Native">React Native</option>
-                                                    <option value=".Net Developer"> .Net Developer</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="single-input">
-                                                <label class="pb-1" for="resume">Upload Resume</label>
-                                                <input type="file" name="image_path" placeholder="Resume"
-                                                    accept=".pdf,.doc,.docx,.cv,image/*">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="single-input">
-                                                <textarea rows="5" placeholder="Short Description"
-                                                    name="message"></textarea>
-                                            </div>
-                                            <div class="button mt-30">
-                                                <button class="theme-btn1" type="submit" name="submit">Submit</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="contact2-image mt-60 image-anime reveal ml-40 md:ml-0 sm:ml-0 md:mt-30 sm:mt-30">
-                            <img class="w-full" src="assets/img/others/contact2-image.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+       
 
         <!--===== CONTACT AREA END =====-->
 

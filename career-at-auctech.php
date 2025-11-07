@@ -254,6 +254,10 @@
                                             <div class="single-input">
                                                 <textarea rows="4" placeholder="Why should we hire you?" name="message"></textarea>
                                             </div>
+                                               <!-- Google reCAPTCHA v2 -->
+                                        <div class="col-md-12 mt-3">
+                                            <div class="g-recaptcha" data-sitekey="6LctIQQsAAAAABcWe_ySrRHQg1UxpOQTmKF04ECG"></div>
+                                        </div>
 
                                             <div class="button mt-30">
                                                 <button class="theme-btn1" type="submit" name="submit">Submit</button>
@@ -261,6 +265,8 @@
                                         </div>
                                     </div>
                                 </form>
+                                     <!-- Load reCAPTCHA script -->
+                                <script src="https://www.google.com/recaptcha/api.js" async defer></script>
                             </div>
                         </div>
                     </div>
@@ -457,76 +463,88 @@
     <script src="assets/js/animation.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script>
-        $(document).ready(function () {
-            $('#enquiryForm').submit(function (e) {
-                e.preventDefault();
+   <script>
+$(document).ready(function () {
+    $('#enquiryForm').submit(function (e) {
+        e.preventDefault();
 
-                
-                var phone = $('input[name="phone"]').val().trim();
-                var phonePattern = /^[0-9]{10}$/;
-                if (!phonePattern.test(phone)) {
-                    Swal.fire({
-                        icon: 'warning',
-                        title: 'Invalid Phone Number',
-                        text: 'Please enter a valid 10-digit phone number.'
-                    });
-                    return false;
-                }
-
-              
-                var fileInput = $('input[name="image_path"]')[0];
-                if (fileInput.files.length > 0) {
-                    var file = fileInput.files[0];
-                    var maxSize = 3 * 1024 * 1024;
-                    if (file.size > maxSize) {
-                        Swal.fire({
-                            icon: 'warning',
-                            title: 'File Too Large',
-                            text: 'File size should not exceed 3 MB.'
-                        });
-                        return false;
-                    }
-                }
-
-                var formData = new FormData(this);
-
-                $.ajax({
-                    url: 'admin/apply_job.php',
-                    type: 'POST',
-                    data: formData,
-                    processData: false,
-                    contentType: false,
-                    success: function (response) {
-                        console.log(response);
-                        if (response == 'success') {
-                            Swal.fire({
-                                icon: 'success',
-                                title: 'Application Received!',
-                                text: 'Thank you for applying. Our team will contact you soon.',
-                            }).then(function () {
-                                $('#enquiryForm')[0].reset();
-                            });
-                        } else {
-                            Swal.fire({
-                                icon: 'error',
-                                title: 'Oops...',
-                                text: 'Invalid file type. Please upload a PDF, DOC, or DOCX.',
-                            });
-                        }
-                    },
-                    error: function (xhr, status, error) {
-                        console.error("AJAX Error: ", status, error);
-                        Swal.fire({
-                            icon: 'error',
-                            title: 'Oops...',
-                            text: 'Something went wrong. Please try again later.',
-                        });
-                    }
-                });
+        // CAPTCHA check
+        if (grecaptcha.getResponse() === "") {
+            Swal.fire({
+                icon: 'warning',
+                title: 'Captcha Required',
+                text: 'Please verify that you are not a robot.'
             });
-        });s
-    </script>
+            return false; // Stop submission
+        }
+
+        // Phone validation
+        var phone = $('input[name="phone"]').val().trim();
+        var phonePattern = /^[0-9]{10}$/;
+        if (!phonePattern.test(phone)) {
+            Swal.fire({
+                icon: 'warning',
+                title: 'Invalid Phone Number',
+                text: 'Please enter a valid 10-digit phone number.'
+            });
+            return false;
+        }
+
+        // File validation
+        var fileInput = $('input[name="image_path"]')[0];
+        if (fileInput.files.length > 0) {
+            var file = fileInput.files[0];
+            var maxSize = 3 * 1024 * 1024;
+            if (file.size > maxSize) {
+                Swal.fire({
+                    icon: 'warning',
+                    title: 'File Too Large',
+                    text: 'File size should not exceed 3 MB.'
+                });
+                return false;
+            }
+        }
+
+        var formData = new FormData(this);
+
+        $.ajax({
+            url: 'admin/apply_job.php',
+            type: 'POST',
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function (response) {
+                console.log(response);
+                if (response == 'success') {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Application Received!',
+                        text: 'Thank you for applying. Our team will contact you soon.',
+                    }).then(function () {
+                        $('#enquiryForm')[0].reset();
+                        grecaptcha.reset(); // Reset CAPTCHA
+                    });
+                } else {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Invalid file type. Please upload a PDF, DOC, or DOCX.',
+                    });
+                }
+            },
+            error: function (xhr, status, error) {
+                console.error("AJAX Error: ", status, error);
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Something went wrong. Please try again later.',
+                });
+            }
+        });
+    });
+});
+</script>
+
 
 </body>
 

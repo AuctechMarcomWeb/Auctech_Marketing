@@ -182,7 +182,7 @@
                         <p class="mt-16">Each project is built to perform, solve, and create value.</p>
                      </div>
                      <div class="bottom-heading">
-                        <h3><span class="counter">1000</span> +</h3>
+                        <h3><span class="counter">2000</span> +</h3>
                      </div>
                   </div>
                </div>
@@ -194,7 +194,7 @@
                         <p class="mt-16">With deep industry knowledge, we deliver smart and reliable solutions.</p>
                      </div>
                      <div class="bottom-heading">
-                        <h3><span class="counter">13</span> Yrs +</h3>
+                        <h3><span class="counter">19</span> Yrs +</h3>
                      </div>
                   </div>
                </div>
@@ -726,6 +726,10 @@
                                  <div class="single-input">
                                     <textarea rows="5" placeholder="How can we help you?" name="message"></textarea>
                                  </div>
+                                  <!-- Google reCAPTCHA v2 -->
+                                        <div class="col-md-12 mt-3">
+                                            <div class="g-recaptcha" data-sitekey="6LctIQQsAAAAABcWe_ySrRHQg1UxpOQTmKF04ECG"></div>
+                                        </div>
                                  <div class="button mt-30">
                                     <button type="submit" class="theme-btn8">
                                        <span class="theme-btn8__shape"></span>
@@ -738,6 +742,8 @@
                               </div>
                            </div>
                         </form>
+                          <!-- Load reCAPTCHA script -->
+                                <script src="https://www.google.com/recaptcha/api.js" async defer></script>
                      </div>
                   </div>
                </div>
@@ -958,43 +964,55 @@ $(document).ready(function () {
 
 
    <script>
-      $(document).ready(function () {
-         $('#enquiryForm').submit(function (e) {
-            e.preventDefault();
+     $(document).ready(function () {
+    $('#enquiryForm').submit(function (e) {
+        e.preventDefault();
 
-            var formData = $(this).serialize();
+        // CAPTCHA check
+        if (grecaptcha.getResponse() === "") {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Please verify that you are not a robot.',
+            });
+            return; // Stop submission
+        }
 
-            $.ajax({
-               url: 'save_contact.php',
-               type: 'POST',
-               data: formData,
-               success: function (response) {
-                  if (response == 'success') {
-                     Swal.fire({
+        var formData = $(this).serialize();
+
+        $.ajax({
+            url: 'save_contact.php',
+            type: 'POST',
+            data: formData,
+            success: function (response) {
+                if (response == 'success') {
+                    Swal.fire({
                         icon: 'success',
                         title: 'Thank you!',
                         text: 'Your query has been sent successfully.',
-                     }).then(function () {
+                    }).then(function () {
                         $('#enquiryForm')[0].reset();
-                     });
-                  } else {
-                     Swal.fire({
+                        grecaptcha.reset(); // CAPTCHA reset
+                    });
+                } else {
+                    Swal.fire({
                         icon: 'error',
                         title: 'Oops...',
                         text: 'Please fill in all fields.',
-                     });
-                  }
-               },
-               error: function () {
-                  Swal.fire({
-                     icon: 'error',
-                     title: 'Oops...',
-                     text: 'Something went wrong. Please try again later.',
-                  });
-               }
-            });
-         });
-      });
+                    });
+                }
+            },
+            error: function () {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Something went wrong. Please try again later.',
+                });
+            }
+        });
+    });
+});
+
    </script>
 
 

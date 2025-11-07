@@ -193,122 +193,152 @@
 
         <div class="contact2 sp">
             <div class="container">
-                <div class="row">
-                    
-                    <div class="col-lg-4 col-md-6">
-                        <div class="contact-page-box">
-                            <div class="icon">
-                                <img src="assets/img/icons/contact-page-icon2.svg" alt="">
-                            </div>
-                            <div class="content">
-                                <h3>Customer Support</h3>
-                                <a href="tel:919838075493">+91 9838075493</a>
-                               
-                            </div>
+               <!-- AUCTECH CONTACT SECTION -->
+                <div class="auctech-contact-area">
+                  <div class="container">
+                    <div class="row g-3">
+                
+                
+                      <!-- Email -->
+                      <div class="col-lg-4 col-md-4">
+                        <div class="ac-card">
+                          <div class="ac-head">
+                            <img src="assets/img/icons/contact-page-icon1.svg" alt="">
+                            <h4>Email Address</h4>
+                          </div>
+                          <div class="ac-actions">
+                            <a href="mailto:info@auctech.in" class="ac-btn email"><i class="fa-solid fa-envelope"></i> info@auctech.in</a>
+                          </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="contact-page-box">
-                            <div class="icon">
-                                <img src="assets/img/icons/contact-page-icon2.svg" alt="">
-                            </div>
-                            <div class="content">
-                                <h3>Creative Department</h3>
-                                <a href="tel:919838075496">+91 9838075496</a>
-                               
-                            </div>
+                      </div>
+                
+                      <!-- Office Address -->
+                      <div class="col-lg-8 col-md-8">
+                        <div class="ac-card address">
+                          <div class="ac-head">
+                            <img src="assets/img/icons/contact-page-icon3.svg" alt="">
+                            <h4>Office Address</h4>
+                          </div>
+                          <div class="ac-actions">
+                            <a href="https://maps.app.goo.gl/SoCERSrCcdt6ci9S9" target="_blank" class="ac-btn map">
+                              <img style="margin-right:6px" width="24" height="24" src="https://img.icons8.com/external-justicon-flat-justicon/external-google-maps-social-media-justicon-flat-justicon.png" alt="external-google-maps-social-media-justicon-flat-justicon"/> New Jiamau, 1090 Chauraha, 167/101, Shaligram Building, Hazratganj, Lucknow, Uttar Pradesh 226001
+                            </a>
+                          </div>
                         </div>
+                      </div>
+                
                     </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="contact-page-box">
-                            <div class="icon">
-                                <img src="assets/img/icons/contact-page-icon2.svg" alt="">
-                            </div>
-                            <div class="content">
-                                <h3>Software Development</h3>
-                                <a href="tel:9198380775495">+91 98380775495</a>
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="contact-page-box">
-                            <div class="icon">
-                                <img src="assets/img/icons/contact-page-icon2.svg" alt="">
-                            </div>
-                            <div class="content">
-                                <h3>Sales Department</h3>
-                                <a href="tel:919450529384">+91 9450529384</a>
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="contact-page-box">
-                            <div class="icon">
-                                <img src="assets/img/icons/contact-page-icon2.svg" alt="">
-                            </div>
-                            <div class="content">
-                                <h3>Sales Department</h3>
-                                <a href="tel:918004051509">+91 8004051509</a>
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="contact-page-box">
-                            <div class="icon">
-                                <img src="assets/img/icons/contact-page-icon1.svg" alt="">
-                            </div>
-                            <div class="content">
-                                <h3>Email Address</h3>
-                                <a href="mailto:info@auctech.in">info@auctech.in</a>
+                  </div>
+                  </div>
+                
+                
+                
+                <style>
+                /* ✨ Modern 2025 Contact Grid Style ✨ */
+                .auctech-contact-area {
+                  background: #f8fafc;
+                }
+                .ac-card {
+                  background: #fff;
+                  border-radius: 14px;
+                 box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                  padding: 16px 14px;
+                  transition: 0.3s ease;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+                  height: 100%;
+                  
+                }
+                .ac-card:hover {
+                  transform: translateY(-4px);
+                  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+                }
+                .ac-head {
+                  display: flex;
+                  align-items: center;
+                  gap: 10px;
+                  margin-bottom: 10px;
+                }
+                .ac-head img {
+                  width: 26px;
+                  height: 26px;
+                }
+                .ac-head h4 {
+                  font-size: 15px;
+                  font-weight: 600;
+                  color: #222;
+                  margin: 0;
+                }
+                .ac-actions {
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  gap: 10px;
+                  flex-wrap: wrap;
+                }
+                .ac-btn {
+                  display: inline-flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 14px;
+                  text-decoration: none;
+                  font-weight: 500;
+                  border-radius: 8px;
+                  padding: 6px 10px;
+                  transition: 0.3s ease;
+                  white-space: nowrap;
+                }
+                .ac-btn i {
+                  margin-right: 6px;
+                  font-size: 14px;
+                }
+                .ac-btn.call {
+                  background: #007bff;
+                  color: #fff;
+                }
+                .ac-btn.call:hover {
+                  background: #005fd6;
+                }
+                .ac-btn.whatsapp {
+                  background: #25d366;
+                  color: #fff;
+                }
+                .ac-btn.whatsapp:hover {
+                  background: #1da956;
+                }
+                .ac-btn.email {
+                  background: #ffb703;
+                  color: #fff;
+                }
+                .ac-btn.map {
+                  background: #6c63ff;
+                  color: #fff;
+                  font-size: 13px;
+                  line-height: 1.5;
+                }
+                .ac-btn.map:hover {
+                  background: #5b52e6;
+                }
+                .address .ac-actions {
+                  flex-direction: column;
+                  align-items: flex-start;
+                }
+                @media (max-width: 768px) {
+                  .ac-btn {
+                    font-size: 13px;
+                    padding: 5px 8px;
+                  }
+                  .ac-head h4 {
+                    font-size: 13px;
+                  }
+                  .ac-head img {
+                    width: 22px;
+                    height: 22px;
+                  }
+                }
+</style>
 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="contact-page-box">
-                            <div class="icon">
-                                <img src="assets/img/icons/contact-page-icon2.svg" alt="">
-                            </div>
-                            <div class="content">
-                                <h3>Digital Marketing / Administration</h3>
-                                <a href="tel:919336357172">+91 9336357172</a>
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="contact-page-box">
-                            <div class="icon">
-                                <img src="assets/img/icons/contact-page-icon2.svg" alt="">
-                            </div>
-                            <div class="content">
-                                <h3>Web Department / MERN Department</h3>
-                                <a href="tel:919450563916">+91 9450563916</a>
-                               
-                            </div>
-                        </div>
-                    </div>
-
-                    
-
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="contact-page-box">
-                            <div class="icon">
-                                <img src="assets/img/icons/contact-page-icon3.svg" alt="">
-                            </div>
-                            <div class="content">
-                                <h3>Office Address</h3>
-                                <a href="https://maps.app.goo.gl/SoCERSrCcdt6ci9S9" target="_blank">
-                                    New Jiamau, 1090 Chauraha, 167/101, Shaligram Building, Hazratganj, Lucknow, Uttar Pradesh 226001
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="row">
                     <div class="col-lg-6 mt-60">
                         <div class="heading4">
@@ -320,46 +350,63 @@
                                 </div>
                                 <p class="mt-16" data-aos="fade-right" data-aos-duration="900">Take your business to the
                                     next level with Auctech. Get in touch with us today:</p>
-                                <form action="save_contact.php" method="POST" data-aos="fade-right" data-aos-duration="1000" id="enquiryForm">
+                                <form action="save_contact.php" method="POST" id="enquiryForm" novalidate>
                                     <div class="row mt-16">
                                         <div class="col-md-6">
                                             <div class="single-input">
                                                 <input type="text" placeholder="Full Name" name="name" required>
                                             </div>
                                         </div>
-
+                                
                                         <div class="col-md-6">
                                             <div class="single-input">
                                                 <input type="email" placeholder="Email Address" name="email" required>
                                             </div>
                                         </div>
+                                
                                         <div class="col-md-6">
                                             <div class="single-input">
-                                                <input type="number" placeholder="Phone Number" name="phone" required>
+                                                <input type="text" id="phone" placeholder="Phone Number" name="phone" required>
                                             </div>
                                         </div>
+                                
                                         <div class="col-md-6">
                                             <div class="single-input">
                                                 <select class="wide" name="subject" required>
-                                                    <option value="1">Inquiry Type</option>
-                                                    <option value="2"> Reel And Creative</option>
-                                                    <option value="3">Web Development</option>
-                                                    <option value="4">App Development</option>
-                                                    <option value="5">SEO</option>
-                                                    <option value="6">Other</option>
+                                                    <option value="">Inquiry Type</option>
+                                                    <option value="Reel And Creative">Reel And Creative</option>
+                                                    <option value="Web Development">Web Development</option>
+                                                    <option value="App Development">App Development</option>
+                                                    <option value="SEO">SEO</option>
+                                                    <option value="Other">Other</option>
                                                 </select>
                                             </div>
                                         </div>
+                                
                                         <div class="col-md-12">
                                             <div class="single-input">
-                                                <textarea rows="5" placeholder="Message" name="message"></textarea>
+                                                <textarea rows="5" placeholder="Message" name="message" required></textarea>
                                             </div>
-                                            <div class="button mt-30">
-                                                <button class="theme-btn1" type="submit">Submit</button>
-                                            </div>
+                                        </div>
+                                
+                                        <!-- Honeypot field (hidden for bots) -->
+                                        <input type="text" id="phone_hidden" name="phone_hidden" style="display:none;">
+                                
+                                        <!-- Google reCAPTCHA v2 -->
+                                        <div class="col-md-12 mt-3">
+                                            <div class="g-recaptcha" data-sitekey="6LctIQQsAAAAABcWe_ySrRHQg1UxpOQTmKF04ECG"></div>
+                                        </div>
+                                
+                                        <div class="col-md-12 mt-3">
+                                            <button type="submit" class="theme-btn1">Submit</button>
                                         </div>
                                     </div>
                                 </form>
+                                
+                                <!-- Load reCAPTCHA script -->
+                                <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+                                
                             </div>
                         </div>
                     </div>
@@ -375,6 +422,200 @@
         <!--===== CONTACT AREA END =====-->
 
 
+   <div class="choose2 sp sec-bg2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="choose2-images mr-40 sm:mr-0 md:mr-0">
+                    <div class="image1 image-anime reveal">
+                        <img src="assets/img/others/choose2-image1.png" alt="">
+                    </div>
+                    <div class="image2 image-anime reveal">
+                        <img src="assets/img/others/choose2-image2.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 sm:mt-30 md:mt-30">
+                <div class="heading2">
+                    <span class="sub-title" data-aos="zoom-in-left" data-aos-duration="900"><img
+                                        src="assets/img/icons/span1.svg" alt="">CONTACT US </span>
+                                <div>
+                                    <h2 class="auctech-color mb-2">Get In Touch With Us</h2>
+                                </div>
+                    
+                    <div class="choose2-apps">
+                        
+                          <!-- Customer Care -->
+                          <div class="contact2025-box highlight">
+                            <div class="contact2025-info">
+                              <h3 class="text-light" style="font-size: 22px;">Customer Care Helpline</h3>
+                              <p class="number">+91 9838075493</p>
+                            </div>
+                            <div class="contact2025-actions">
+                              <a href="tel:919838075493" class="call-btn"><i class="fas fa-phone"></i> Call</a>
+                              <a href="https://wa.me/919838075493" target="_blank" class="wa-btn"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                            </div>
+                          </div>
+                        
+                          <!-- Department Contacts -->
+                          <div class="contact2025-grid">
+                        
+                            <div class="contact2025-box">
+                              <h4>Software Development Dept.</h4>
+                              <p>+91 9838075495</p>
+                              <small>Web Apps / Mobile Apps</small>
+                              <div class="contact2025-actions">
+                                <a href="tel:919838075495" class="call-btn"><i class="fas fa-phone"></i></a>
+                                <a href="https://wa.me/919838075495" target="_blank" class="wa-btn"><i class="fab fa-whatsapp"></i></a>
+                              </div>
+                            </div>
+                        
+                            <div class="contact2025-box">
+                              <h4>Creative Production Dept.</h4>
+                              <p>+91 9838075496</p>
+                              <small>Design / Content Creation</small>
+                              <div class="contact2025-actions">
+                                <a href="tel:919838075496" class="call-btn"><i class="fas fa-phone"></i></a>
+                                <a href="https://wa.me/919838075496" target="_blank" class="wa-btn"><i class="fab fa-whatsapp"></i></a>
+                              </div>
+                            </div>
+                        
+                            <div class="contact2025-box">
+                              <h4>Sales Department</h4>
+                              <p>+91 9450529384 / +91 8004051509</p>
+                              <small>Client & Business Queries</small>
+                              <div class="contact2025-actions">
+                                <a href="tel:919450529384" class="call-btn"><i class="fas fa-phone"></i></a>
+                                <a href="https://wa.me/919450529384" target="_blank" class="wa-btn"><i class="fab fa-whatsapp"></i></a>
+                              </div>
+                            </div>
+                        
+                            <div class="contact2025-box">
+                              <h4>Digital Marketing / SEO</h4>
+                              <p>+91 9336357172</p>
+                              <small>Social Media / SEO / Admin</small>
+                              <div class="contact2025-actions">
+                                <a href="tel:919336357172" class="call-btn"><i class="fas fa-phone"></i></a>
+                                <a href="https://wa.me/919336357172" target="_blank" class="wa-btn"><i class="fab fa-whatsapp"></i></a>
+                              </div>
+                            </div>
+                        
+                            <div class="contact2025-box">
+                              <h4>Management</h4>
+                              <p>+91 9838075490</p>
+                              <div class="contact2025-actions">
+                                <a href="tel:919838075490" class="call-btn"><i class="fas fa-phone"></i></a>
+                                <a href="https://wa.me/919838075490" target="_blank" class="wa-btn"><i class="fab fa-whatsapp"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        
+                        <style>
+                            .contact2025-section {
+                              font-family: 'Inter', sans-serif;
+                              padding: 10px 0;
+                              max-width: 550px;
+                            }
+                            .contact2025-header {
+                              display: flex;
+                              align-items: center;
+                              gap: 10px;
+                              margin-bottom: 15px;
+                            }
+                            .contact2025-header i {
+                              color: #007bff;
+                              font-size: 22px;
+                            }
+                            .contact2025-header h2 {
+                              font-size: 20px;
+                              font-weight: 600;
+                              color: #222;
+                            }
+                            .contact2025-grid {
+                              display: grid;
+                              grid-template-columns: 1fr 1fr;
+                              gap: 10px;
+                            }
+                            .contact2025-box {
+                              background: #fff;
+                              border-radius: 12px;
+                              padding: 10px 12px;
+                              box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+                              position: relative;
+                              transition: all 0.3s ease;
+                              margin:6px 0px;
+                            }
+                            .contact2025-box:hover {
+                              transform: translateY(-2px);
+                              box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+                            }
+                            .contact2025-box.highlight {
+                              grid-column: 1 / -1;
+                                  background: linear-gradient(135deg, #c7347c, #f5a11a);
+                              color: #fff;
+                            }
+                            .contact2025-info {
+                              display: flex;
+                              justify-content: space-between;
+                              align-items: center;
+                            }
+                            .contact2025-info p{
+                                color: #fff;
+                                font-size: 20px !important;
+                                font-weight: 600;
+                            }
+                            .contact2025-box h3, .contact2025-box h4 {
+                              margin: 0;
+                              font-size: 14px;
+                              font-weight: 600;
+                            color: #ca3c75;
+                            }
+                            .contact2025-box p {
+                              font-size: 14px;
+                              margin: 4px 0;
+                            }
+                            .contact2025-box small {
+                              font-size: 12px;
+                              color: #777;
+                            }
+                            .contact2025-actions {
+                              margin-top: 6px;
+                              display: flex;
+                              gap: 8px;
+                            }
+                            .call-btn, .wa-btn {
+                                width: 100%;
+                                height: 28px;
+                                border-radius: 8px;
+                                display: inline-flex;
+                                border: none;
+                                align-items: center;
+                                justify-content: center;
+                                color: white;
+                                font-size: 14px;
+                                transition: 0.3s;
+                                border: 1px solid #bbbbbb;
+                                gap: 8px;
+                            }
+                            .call-btn { background: #007bff; }
+                            .wa-btn { background: #25d366; }
+                            .call-btn:hover { background: #0062cc; }
+                            .wa-btn:hover { background: #1ebe5d; }
+                            
+                            @media (max-width: 768px) {
+                              .contact2025-grid { grid-template-columns: 1fr; }
+                              .contact2025-section { max-width: 100%; }
+                            }
+                        </style>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+   </div>
         <div class="contact-map-page">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14238.590243705978!2d80.96422144080739!3d26.85115989075552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd10cfd0bb2f%3A0x36a1e3803e493540!2sAuctech%20Marketing%20Communication%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1750677105570!5m2!1sen!2sin"
@@ -438,58 +679,84 @@
     <script src="assets/js/animation.js"></script>
     <script src="assets/js/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script>
-      $(document).ready(function () {
-         $('#enquiryForm').submit(function (e) {
-            e.preventDefault();
+<script>
+document.getElementById('enquiryForm').addEventListener('submit', function(e) {
+    e.preventDefault();
 
-            // Phone number validation
-            var phone = $('input[name="phone"]').val().trim();
-            var phonePattern = /^[0-9]{10}$/;
+    var form = this;
 
-            if (!phonePattern.test(phone)) {
-               Swal.fire({
-                  icon: 'warning',
-                  title: 'Invalid Phone Number',
-                  text: 'Please enter a valid 10-digit phone number.'
-               });
-               return false;
-            }
+    // Honeypot check (bots will fill hidden field)
+    if (document.getElementById('phone_hidden').value.trim() !== '') {
+        console.log("Bot detected! Submission blocked.");
+        return;
+    }
 
-            var formData = $(this).serialize();
+    // Phone validation (exactly 10 digits)
+    var phone = document.getElementById('phone').value.trim();
+    if (!/^\d{10}$/.test(phone)) {
+        Swal.fire({
+            title: 'Invalid Phone Number',
+            html: '<p>Phone number must be exactly 10 digits.</p>',
+            icon: 'warning',
+            confirmButtonText: 'OK'
+        });
+        return;
+    }
 
-            $.ajax({
-               url: 'save_contact.php',
-               type: 'POST',
-               data: formData,
-               success: function (response) {
-                  if (response == 'success') {
-                     Swal.fire({
-                        icon: 'success',
-                        title: 'Thank you!',
-                        text: 'Your query has been sent successfully.',
-                     }).then(function () {
-                        $('#enquiryForm')[0].reset();
-                     });
-                  } else {
-                     Swal.fire({
-                        icon: 'error',
-                        title: 'Oops...',
-                        text: 'Please fill in all fields.',
-                     });
-                  }
-               },
-               error: function () {
-                  Swal.fire({
-                     icon: 'error',
-                     title: 'Oops...',
-                     text: 'Something went wrong. Please try again later.',
-                  });
-               }
+    // reCAPTCHA validation
+    var recaptchaResponse = grecaptcha.getResponse();
+    if (recaptchaResponse.length === 0) {
+        Swal.fire({
+            title: 'CAPTCHA Required',
+            html: '<p>Please complete the "I\'m not a robot" checkbox.</p>',
+            icon: 'warning',
+            confirmButtonText: 'OK'
+        });
+        return;
+    }
+
+    // Prepare form data
+    var formData = new FormData(form);
+    formData.append('g-recaptcha-response', recaptchaResponse);
+
+    // AJAX POST request
+    fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        credentials: 'same-origin'
+    })
+    .then(response => response.text())
+    .then(result => {
+        if (result.trim().toLowerCase() === 'success') {
+            Swal.fire({
+                title: 'Thank You!',
+                html: '<p>Your query has been submitted successfully. Our team will contact you shortly.</p>',
+                icon: 'success',
+                confirmButtonText: 'OK'
+            }).then(() => {
+                form.reset();
+                grecaptcha.reset();
             });
-         });
-      });
-   </script>
+        } else {
+            Swal.fire({
+                title: 'Error!',
+                html: '<p>' + (result || 'Something went wrong.') + '</p>',
+                icon: 'error',
+                confirmButtonText: 'OK'
+            });
+        }
+    })
+    .catch(error => {
+        Swal.fire({
+            title: 'Error!',
+            text: 'Something went wrong: ' + error,
+            icon: 'error',
+            confirmButtonText: 'OK'
+        });
+    });
+});
+</script>
+
 </body>
 
 </html>

@@ -52,6 +52,16 @@
         .text-justify{
             text-align:justify; 
         }
+        .heading2 h3 {
+             font-size: var(--f-fs-font-24);
+        }
+        
+        .faq-content .accordion .accordion-item.active {
+            background-color: var(--vtc-bg-main6);
+        }
+        .faq-content .accordion .accordion-item button::before {
+             background: var(--vtc-bg-main6);
+        }
     </style>
 
 </head>
@@ -149,7 +159,7 @@
                                     <img src="assets/img/about/about6-image2.png" alt="">
                                 </div>
                                 <div class="count-text-box">
-                                    <h3>13+</h3>
+                                    <h3>19+</h3>
                                     <p>Years of Experience</p>
                                     <img src="assets/img/shapes/faq6-text-shape.png" alt="" class="count-shape">
                                 </div>
@@ -241,7 +251,7 @@
 
                     <div class="col-lg col-md-4">
                         <div class="inner-counter-box mt-30">
-                            <h3>1000+</h3>
+                            <h3>2000+</h3>
                             <p>Project Complete</p>
                         </div>
                     </div>
@@ -433,33 +443,18 @@
                             </span>
                             <h3 class="text-danger"> Our Mission <img width="30" height="30"
                                     src="https://img.icons8.com/3d-fluency/goal.png" alt="" /></h3>
-                            <p class="mt-16 text-justify" data-aos="fade-right" data-aos-duration="800">Our mission is
-                                to support businesses by delivering customized
-                                software and smart marketing solutions.
-                                We understand that every client is different, so we focus on creating strategies that
-                                match their unique goals.
-                                Whether it’s through web & app development, SEO, or creative branding — we aim to
-                                deliver real, measurable impact. <br>
-                                Our approach is centered on innovation, quality, and building long-term relationships.
-                                We strive to help brands grow, stay competitive, and succeed in today’s digital world.
+                            <p class="mt-16 text-justify" data-aos="fade-right" data-aos-duration="800">We empower businesses with tailored software and intelligent marketing solutions that drive measurable growth. By understanding each client’s unique goals, we craft strategies across web & app development, SEO, and branding to deliver real results. Our focus on innovation, quality, and long-term partnerships helps brands stay competitive and thrive in the digital era.
 
                             </p>
 
 
-                            <h3 class="text-danger mt-30">Our Vision <img width="35" height="35"
+                            <h3 class="text-danger mt-24">Our Vision <img width="35" height="35"
                                     src="https://img.icons8.com/external-wanicon-flat-wanicon/external-vision-design-thinking-wanicon-flat-wanicon.png"
                                     alt="" /></h3>
-                            <p class="mt-16 text-justify" data-aos="fade-right" data-aos-duration="800">Our vision is to
-                                become a
-                                global leader in digital transformation by combining creativity with advanced
-                                technology.
-                                We want to set new standards in how businesses connect, grow, and engage their audience
-                                online.
-                                By staying client-focused and innovation-driven, we aim to build solutions that truly
-                                make a difference. <br>
-                                We believe in designing experiences that are not only effective, but also meaningful.
-                                Through dedication and forward thinking, we’re working to shape a smarter digital
-                                future.</p>
+                            <p class="mt-16 text-justify" data-aos="fade-right" data-aos-duration="800">Our vision is to be a global leader in digital transformation—where creativity meets technology. We aim to redefine how businesses connect and grow online through innovation, client focus, and meaningful experiences. With forward thinking and dedication, we’re shaping a smarter, more impactful digital future.</p>
+                                
+                            <h3 class="text-danger mt-24">Our Goal <img width="35" height="35" src="https://img.icons8.com/glassmorphism/48/goal.png" alt="goal"/></h3>
+                            <p class="mt-16 text-justify" data-aos="fade-right" data-aos-duration="800">Our goal is to empower businesses to achieve sustainable growth through smart, data-driven digital solutions. We aim to bridge the gap between technology and creativity, ensuring every project delivers measurable success. By focusing on performance, innovation, and client satisfaction, we strive to turn ideas into impactful digital experiences that help brands reach their full potential.</p>
 
 
                         </div>
@@ -468,6 +463,143 @@
                 </div>
             </div>
         </div>
+        
+        
+        
+           <!--==== FAQ AREA START =====-->
+
+    <div class="faq10 sp bg-cover" style="background-image: url(assets/img/bg/sec-bg10.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class=" m-auto text-center">
+                    <div class="heading2">
+                        <div><span class="sub-title" data-aos="zoom-in-left" data-aos-duration="900"> Auctech Timeline</span></div>
+                        <!--<h2 class="text-anime-style-3">Journey of Innovation and Growth</h2>-->
+                        <h2 class="auctech-color">Journey of Innovation and Growth</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-30 align-items-center">
+                <div class="col-md-6">
+                    <div class="faq-content mt-30" data-aos="fade-right" data-aos-duration="800">
+                        <div class="accordion accordion1" id="accordionExample">
+                            <div class="accordion-item active"> 
+                              <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    2006 – The Beginning
+                                </button>
+                              </h2>
+                              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Mr. Ali Shamsi embarked on his entrepreneurial journey by establishing his first proprietorship concern, laying the foundation for a visionary career in IT and creative services.
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    2008 – International Expansion
+                                </button>
+                              </h2>
+                              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Founded a firm in Bahrain, in collaboration with Life Telecom, to outsource IT and creative production work, marking the company’s first international footprint.
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    2010 – Infrastructure Development in India
+                                </button>
+                              </h2>
+                              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Expanded infrastructure and capabilities in Lucknow, India, setting up a full-fledged IT solutions development unit to strengthen technical operations.
+                                </div>
+                              </div>
+                            </div>
+                
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                   2012 – Incorporation of Wiztech Consultancy Pvt. Ltd.
+                                </button>
+                              </h2>
+                              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Established Wiztech Consultancy Private Limited, a milestone that formalized operations and expanded into software development, IT consultancy, and enterprise solutions.
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFive">
+                                  2015 – Government Empanelment
+                                </button>
+                              </h2>
+                              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Empaneled as a Government Contractor with UPDESCO and ITI Limited, undertaking multiple state-level ICT and e-Governance projects, further enhancing credibility and trust.
+                                </div>
+                              </div>
+                            </div>
+                            
+                             <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                   2019 – Launch of Sibook Corporate Solution
+                                </button>
+                              </h2>
+                              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Launched Sibook Corporate Solution, a specialized ICT integration firm managing large-scale corporate and government technology projects, integrating smart systems and digital infrastructure.
+                                </div>
+                              </div>
+                            </div>
+                            
+                             <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                  2020 – Birth of Auctech Marketing Communication Pvt. Ltd.
+                                </button>
+                              </h2>
+                              <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Introduced Auctech Marketing Communication Private Limited, a branding, PR, and digital marketing company with a mission to deliver innovative and result-driven marketing solutions to the global market.
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                   2025 – The Unified Vision
+                                </button>
+                              </h2>
+                              <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Today, we stand as a diversified and unified organization, offering comprehensive IT, ICT, branding, advertising, and digital marketing solutions — all under one roof, empowering businesses through creativity and technology
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="faq10-image mt-30 ml-60 sm:ml-0 md:md-0"  data-aos="fade-right" data-aos-duration="1000">
+                        <img src="assets/img/others/faq10-image.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--==== FAQ AREA END =====-->
 
 
         <div class="cta6">

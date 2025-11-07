@@ -424,7 +424,7 @@
 
    <div class="choose2 sp sec-bg2">
     <div class="container">
-        <div class="row">
+        <div class="row" style="align-items:center">
             <div class="col-lg-6">
                 <div class="choose2-images mr-40 sm:mr-0 md:mr-0">
                     <div class="image1 image-anime reveal">
@@ -447,10 +447,10 @@
                     <div class="choose2-apps">
                         
                           <!-- Customer Care -->
-                          <div class="contact2025-box highlight">
+                          <div class="contact2025-box highlight" style="margin-bottom: 20px; background:white;">
                             <div class="contact2025-info">
-                              <h3 class="text-light" style="font-size: 22px;">Customer Care Helpline</h3>
-                              <p class="number">+91 9838075493</p>
+                              <h3 class="" style="font-size: 22px;">Customer Care Helpline</h3>
+                              <h3 class="number" style="font-size: 22px;">+91 9838075493</h3>
                             </div>
                             <div class="contact2025-actions">
                               <a href="tel:919838075493" class="call-btn"><i class="fas fa-phone"></i> Call</a>
@@ -462,39 +462,37 @@
                           <div class="contact2025-grid">
                         
                             <div class="contact2025-box">
-                              <h4>Software Development Dept.</h4>
+                              <h4>Software Development Department (Web apps)</h4>
                               <p>+91 9838075495</p>
-                              <small>Web Apps / Mobile Apps</small>
+                              <!-- <small>Web Apps / Mobile Apps</small> -->
                               <div class="contact2025-actions">
                                 <a href="tel:919838075495" class="call-btn"><i class="fas fa-phone"></i></a>
                                 <a href="https://wa.me/919838075495" target="_blank" class="wa-btn"><i class="fab fa-whatsapp"></i></a>
                               </div>
                             </div>
+                            <div class="contact2025-box">
+                              <h4>Software Development Department (Mobile apps)</h4>
+                              <p>+91 9838075416</p>
+                              
+                              <div class="contact2025-actions">
+                                <a href="tel:919838075416" class="call-btn"><i class="fas fa-phone"></i></a>
+                                <a href="https://wa.me/919838075416" target="_blank" class="wa-btn"><i class="fab fa-whatsapp"></i></a>
+                              </div>
+                            </div>
                         
                             <div class="contact2025-box">
-                              <h4>Creative Production Dept.</h4>
+                              <h4>Creative Production Department</h4>
                               <p>+91 9838075496</p>
-                              <small>Design / Content Creation</small>
+                              <!-- <small>Design / Content Creation</small> -->
                               <div class="contact2025-actions">
                                 <a href="tel:919838075496" class="call-btn"><i class="fas fa-phone"></i></a>
                                 <a href="https://wa.me/919838075496" target="_blank" class="wa-btn"><i class="fab fa-whatsapp"></i></a>
                               </div>
                             </div>
-                        
                             <div class="contact2025-box">
-                              <h4>Sales Department</h4>
-                              <p>+91 9450529384 / +91 8004051509</p>
-                              <small>Client & Business Queries</small>
-                              <div class="contact2025-actions">
-                                <a href="tel:919450529384" class="call-btn"><i class="fas fa-phone"></i></a>
-                                <a href="https://wa.me/919450529384" target="_blank" class="wa-btn"><i class="fab fa-whatsapp"></i></a>
-                              </div>
-                            </div>
-                        
-                            <div class="contact2025-box">
-                              <h4>Digital Marketing / SEO</h4>
+                              <h4>Digital Marketing (Social Media / SEO) </h4>
                               <p>+91 9336357172</p>
-                              <small>Social Media / SEO / Admin</small>
+                              <!-- <small>Social Media / SEO / Admin</small> -->
                               <div class="contact2025-actions">
                                 <a href="tel:919336357172" class="call-btn"><i class="fas fa-phone"></i></a>
                                 <a href="https://wa.me/919336357172" target="_blank" class="wa-btn"><i class="fab fa-whatsapp"></i></a>
@@ -502,13 +500,29 @@
                             </div>
                         
                             <div class="contact2025-box">
-                              <h4>Management</h4>
-                              <p>+91 9838075490</p>
+                              <h4>Sales Department</h4>
+                              <p>+91 919450529384</p>
+                              <!-- <small>Client & Business Queries</small> -->
                               <div class="contact2025-actions">
-                                <a href="tel:919838075490" class="call-btn"><i class="fas fa-phone"></i></a>
-                                <a href="https://wa.me/919838075490" target="_blank" class="wa-btn"><i class="fab fa-whatsapp"></i></a>
+                                <a href="tel:919450529384" class="call-btn"><i class="fas fa-phone"></i></a>
+                                <a href="https://wa.me/918004051584" target="_blank" class="wa-btn"><i class="fab fa-whatsapp"></i></a>
                               </div>
                             </div>
+                             <div class="contact2025-box">
+                              <h4>Sales Department</h4>
+                              <p> +91 8004051509</p>
+                              
+                              <div class="contact2025-actions">
+                                <a href="tel: 918004051509" class="call-btn"><i class="fas fa-phone"></i></a>
+                                <a href="https://wa.me/918004051509" target="_blank" class="wa-btn"><i class="fab fa-whatsapp"></i></a>
+                              </div>
+                            </div>
+                        
+                            
+
+                            
+                        
+                            
                           </div>
                         
                         <style>
@@ -600,14 +614,64 @@
                             }
                             .call-btn { background: #007bff; }
                             .wa-btn { background: #25d366; }
-                            .call-btn:hover { background: #0062cc; }
+                           
                             .wa-btn:hover { background: #1ebe5d; }
+                            .contact2025-box h3, .contact2025-box h4 {
+                                margin: 0;
+                                font-size: 16px;
+                                font-weight: 600;
+                                color: #ca3c75;
+                            }
+                            a:hover {
+                                color: inherit;   /* color same rahega jaisa normal state me hai */
+                                text-decoration: none; /* optional — underline bhi hat jayega */
+                                }
                             
                             @media (max-width: 768px) {
                               .contact2025-grid { grid-template-columns: 1fr; }
                               .contact2025-section { max-width: 100%; }
                             }
                         </style>
+
+                    </div>
+                </div>
+                <div class="heading2">
+                    
+                                <div style="display:flex; justify-content:center;}">
+                                    <h2 class="auctech-color mb-2" style="font-size:24px;font-size: 24px;line-height: 1;margin-top: 20px;">Administration</h2>
+                                </div>
+                    
+                    <div class="choose2-apps">
+                        
+                          
+                        
+                          <!-- Department Contacts -->
+                          <div class="contact2025-grid">
+                        
+                            
+                            
+
+                            <div class="contact2025-box">
+                              <h4>HR & Administration </h4>
+                              <p>+91 9336357172</p>
+                              <!-- <small>Social Media / SEO / Admin</small> -->
+                              <div class="contact2025-actions">
+                                <a href="tel:919336357172" class="call-btn"><i class="fas fa-phone"></i></a>
+                                <a href="https://wa.me/919336357172" target="_blank" class="wa-btn"><i class="fab fa-whatsapp"></i></a>
+                              </div>
+                            </div>
+                        
+                            <div class="contact2025-box">
+                              <h4>Management</h4>
+                              <p>+91 9838075490</p>
+                              <div class="contact2025-actions">
+                                <a href="tel:919838075490" class="call-btn"><i class="fas fa-phone"></i></a>
+                                <a href="https://wa.me/919838075490" target="_blank" class="wa-btn"><i class="fab fa-whatsapp"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        
+                        
 
                     </div>
                 </div>

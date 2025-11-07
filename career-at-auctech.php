@@ -201,17 +201,17 @@
                                     <div class="row mt-16">
                                         <div class="col-md-6">
                                             <div class="single-input">
-                                                <input type="text" placeholder="Full Name" name="name">
+                                                <input type="text" placeholder="Full Name *" name="name" required>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="single-input">
-                                                <input type="number" placeholder="Phone Number" name="phone">
+                                                <input type="number" placeholder="Phone Number *" name="phone" required>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="single-input">
-                                                <input type="email" placeholder="Email Address" name="email">
+                                                <input type="email" placeholder="Email Address *" name="email" required>
                                             </div>
                                         </div>
                                         <style>
@@ -224,7 +224,7 @@
 
                                         <div class="col-md-6">
                                             <div class="single-input">
-                                               <label class="pb-1" for="position">Position Applying For</label>
+                                               <label class="pb-1" for="position">Position Applying For *</label>
                                                 <select class="wide" name="job_type">
                                                     <option value="">Select Position</option>
                                                     <option value="MERN Developer">MERN Developer</option>
@@ -245,14 +245,14 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="single-input">
-                                                <label class="pb-1" for="resume">Upload Resume</label>
+                                                <label class="pb-1" for="resume">Upload Resume *</label>
                                                 <input type="file" name="image_path" placeholder="Resume"
-                                                    accept=".pdf,.doc,.docx,.cv,image/*">
+                                                    accept=".pdf,.doc,.docx,.cv,image/*" required>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="single-input">
-                                                <textarea rows="4" placeholder="Why should we hire you?" name="message"></textarea>
+                                                <textarea rows="4" placeholder="Why should we hire you? *" required name="message"></textarea>
                                             </div>
                                                <!-- Google reCAPTCHA v2 -->
                                         <div class="col-md-12 mt-3">

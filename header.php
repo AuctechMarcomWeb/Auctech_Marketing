@@ -1,3 +1,34 @@
+ <script src="https://code.jquery.com/jquery-3.7.1.js" ></script>
+    <script>
+        $(document).ready(function(){
+            // Allowed extensions
+            const allowed = [
+                '.jpg','.jpeg','.png','.webp','.gif','.pdf','.docx','.heic','.heif'
+            ];
+        
+            // Convert to accept string for HTML input
+            const acceptStr = allowed.join(',');
+        
+            // Apply to all file inputs on page load
+            $('input[type="file"]').attr('accept', acceptStr);
+        
+            // Optional: prevent pasting/dragging of disallowed files
+            $(document).on('change', 'input[type="file"]', function(){
+                const files = this.files;
+                if(!files) return;
+                for(let i=0;i<files.length;i++){
+                    const f = files[i];
+                    const ext = '.' + f.name.split('.').pop().toLowerCase();
+                    if(allowed.indexOf(ext) === -1){
+                        alert('Only image/PDF/DOCX files are allowed!');
+                        $(this).val(''); // reset input
+                        return;
+                    }
+                }
+            });
+        });
+    </script>
+
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
         body, a, p, span, h1, h2, h3, h4, h5, h6, button, input, placeholder, select, option, textarea{
@@ -286,6 +317,7 @@
                                  <li> <a href="https://www.auctech.in/portfolio/" target="_blank">Portfolio</a></li>
                                 <li> <a href="case-study.php">Case Studies </a></li>
                                 <li> <a href="blogs.php">Blogs</a></li>
+                                <li> <a href="contact.php" class=" d-lg-none">Contact Us</a></li>
                             </ul>
                         </nav>
                     </div>

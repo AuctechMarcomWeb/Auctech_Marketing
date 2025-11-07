@@ -287,7 +287,7 @@
                   border-radius: 8px;
                   padding: 6px 10px;
                   transition: 0.3s ease;
-                  white-space: nowrap;
+            
                 }
                 .ac-btn i {
                   margin-right: 6px;
@@ -354,26 +354,26 @@
                                     <div class="row mt-16">
                                         <div class="col-md-6">
                                             <div class="single-input">
-                                                <input type="text" placeholder="Full Name" name="name" required>
+                                                <input type="text" placeholder="Full Name *" name="name" required>
                                             </div>
                                         </div>
                                 
                                         <div class="col-md-6">
                                             <div class="single-input">
-                                                <input type="email" placeholder="Email Address" name="email" required>
+                                                <input type="email" placeholder="Email Address *" name="email" required>
                                             </div>
                                         </div>
                                 
                                         <div class="col-md-6">
                                             <div class="single-input">
-                                                <input type="text" id="phone" placeholder="Phone Number" name="phone" required>
+                                                <input type="text" id="phone" placeholder="Phone Number *" name="phone" required>
                                             </div>
                                         </div>
                                 
                                         <div class="col-md-6">
                                             <div class="single-input">
                                                 <select class="wide" name="subject" required>
-                                                    <option value="">Inquiry Type</option>
+                                                    <option value="">Inquiry Type *</option>
                                                     <option value="Reel And Creative">Reel And Creative</option>
                                                     <option value="Web Development">Web Development</option>
                                                     <option value="App Development">App Development</option>
@@ -385,7 +385,7 @@
                                 
                                         <div class="col-md-12">
                                             <div class="single-input">
-                                                <textarea rows="5" placeholder="Message" name="message" required></textarea>
+                                                <textarea rows="5" placeholder="Message *" name="message" required></textarea>
                                             </div>
                                         </div>
                                 
@@ -439,9 +439,9 @@
             <div class="col-lg-6 sm:mt-30 md:mt-30">
                 <div class="heading2">
                     <span class="sub-title" data-aos="zoom-in-left" data-aos-duration="900"><img
-                                        src="assets/img/icons/span1.svg" alt="">CONTACT US </span>
+                                        src="assets/img/icons/span1.svg" alt="">DIRECT CONTACT US </span>
                                 <div>
-                                    <h2 class="auctech-color mb-2">Get In Touch With Us</h2>
+                                    <h2 class="auctech-color mb-2">Direct Contact Us </h2>
                                 </div>
                     
                     <div class="choose2-apps">
@@ -626,10 +626,17 @@
                                 color: inherit;   /* color same rahega jaisa normal state me hai */
                                 text-decoration: none; /* optional — underline bhi hat jayega */
                                 }
+                                .ac-btn.email {
+                                    background: #6c63ff;
+                                    color: #fff;
+                                }
                             
                             @media (max-width: 768px) {
                               .contact2025-grid { grid-template-columns: 1fr; }
                               .contact2025-section { max-width: 100%; }
+                              .contact2025-info {
+                                    flex-direction: column;
+                                }
                             }
                         </style>
 

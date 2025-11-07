@@ -680,17 +680,17 @@
                            <div class="row mt-16">
                               <div class="col-md-12">
                                  <div class="single-input">
-                                    <input type="text" placeholder="Full Name" name="name" required>
+                                    <input type="text" placeholder="Full Name *" name="name" required>
                                  </div>
                               </div>
                               <div class="col-md-6">
                                  <div class="single-input">
-                                    <input type="email" placeholder="Email Address" name="email" required>
+                                    <input type="email" placeholder="Email Address *" name="email" required>
                                  </div>
                               </div>
                               <div class="col-md-6">
                                  <div class="single-input">
-                                    <input type="text" name="phone" placeholder="Mobile Number" required maxlength="10"
+                                    <input type="text" name="phone" placeholder="Mobile Number *" required maxlength="10"
                                        pattern="\d{10}" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
 
                                  </div>
@@ -698,7 +698,7 @@
                               <div class="col-md-12">
                                  <div class="single-input">
                                     <select class="wide" name="subject" required>
-                                       <option value="">Select a Service</option>
+                                       <option value="">Select a Service *</option>
                                        <option value="Branding & Digital PR">Branding & Digital PR</option>
                                        <option value="Website Development">Website Development</option>
                                        <option value="Customized Software Development">Customized Software Development
@@ -724,7 +724,7 @@
                               </div>
                               <div class="col-md-12">
                                  <div class="single-input">
-                                    <textarea rows="5" placeholder="How can we help you?" name="message"></textarea>
+                                    <textarea rows="5" placeholder="How can we help you? *" name="message"></textarea>
                                  </div>
                                   <!-- Google reCAPTCHA v2 -->
                                         <div class="col-md-12 mt-3">
